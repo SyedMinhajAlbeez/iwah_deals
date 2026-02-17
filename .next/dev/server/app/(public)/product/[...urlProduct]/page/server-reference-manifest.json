@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60eb79a3538551fb2030807b751d02a193c665e5bf": {
+      "workers": {
+        "app/(public)/product/[...urlProduct]/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/.next-internal/server/app/(public)/product/[...urlProduct]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "userSubscribe",
+          "filename": "Desktop/iwah/Iwah_deals/src/utils/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/product/[...urlProduct]/page": "action-browser"
+      },
+      "exportedName": "userSubscribe",
+      "filename": "Desktop/iwah/Iwah_deals/src/utils/actions.ts"
+    }
+  },
+  "edge": {}
+}

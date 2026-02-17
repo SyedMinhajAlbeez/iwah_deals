@@ -41,10 +41,12 @@ export async function RelatedProductsSection({
     ? fetchRelatedProducts.relatedProducts.edges.map((e : any) => e.node)
     : [];
   return (
+    <>
     <ProductsSection
       title="Related Products"
       description="Discover the latest trends! Fresh products just added—shop new styles, tech, and essentials before they're gone."
       products={relatedProducts}
     />
+    </>
   );
 }

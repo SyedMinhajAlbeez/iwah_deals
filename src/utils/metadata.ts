@@ -1,9 +1,9 @@
 
 export const staticSeo = {
   default: {
-    title: "Bagisto Headless",
+    title: "Iwah Deals",
     description: "Headless eCommerce with Bagisto",
-    image: "/Logo.webp",
+    // image: "/Logo.webp",
     canonical: "/",
   },
   register : {

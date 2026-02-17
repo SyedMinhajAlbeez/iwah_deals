@@ -1,18 +1,39 @@
 {
   "node": {
-    "60f84c6cb4fb41c6aa0091c07ede62c8ec99cce758": {
+    "60eb79a3538551fb2030807b751d02a193c665e5bf": {
       "workers": {
-        "app/(public)/page": {
-          "moduleId": "[project]/storefront/.next-internal/server/app/(public)/page/actions.js { ACTIONS_MODULE0 => \"[project]/storefront/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/(public)/[page]/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/.next-internal/server/app/(public)/[page]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "userSubscribe",
-          "filename": "storefront/src/utils/actions.ts"
+          "filename": "Desktop/iwah/Iwah_deals/src/utils/actions.ts"
+        },
+        "app/(public)/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/.next-internal/server/app/(public)/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "userSubscribe",
+          "filename": "Desktop/iwah/Iwah_deals/src/utils/actions.ts"
+        },
+        "app/(public)/product/[...urlProduct]/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/.next-internal/server/app/(public)/product/[...urlProduct]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "userSubscribe",
+          "filename": "Desktop/iwah/Iwah_deals/src/utils/actions.ts"
+        },
+        "app/(public)/search/[collection]/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/.next-internal/server/app/(public)/search/[collection]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "userSubscribe",
+          "filename": "Desktop/iwah/Iwah_deals/src/utils/actions.ts"
         }
       },
       "layer": {
-        "app/(public)/page": "action-browser"
+        "app/(public)/[page]/page": "action-browser",
+        "app/(public)/page": "action-browser",
+        "app/(public)/product/[...urlProduct]/page": "action-browser",
+        "app/(public)/search/[collection]/page": "action-browser"
       },
-      "filename": "storefront/src/utils/actions.ts",
+      "filename": "Desktop/iwah/Iwah_deals/src/utils/actions.ts",
       "exportedName": "userSubscribe"
     }
   },

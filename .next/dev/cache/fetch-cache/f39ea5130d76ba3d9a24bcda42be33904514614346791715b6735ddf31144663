@@ -1,0 +1,1 @@
+{"kind":"FETCH","data":{"headers":{},"body":"{\"product\":{\"__typename\":\"Product\",\"id\":\"/Cdn/public/api/shop/products/3\",\"sku\":\"product1\",\"relatedProducts\":{\"__typename\":\"ProductCursorConnection\",\"edges\":[]}}}","status":200,"url":""},"revalidate":3600,"tags":["related-products","product-product-var"]}
