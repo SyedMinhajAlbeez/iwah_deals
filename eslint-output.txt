@@ -1,0 +1,10 @@
+﻿
+C:\xampp\htdocs\trad\storefront\src\components\layout\footer\index.tsx
+  17:9   error  'COMPANY_NAME' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  17:23  error  'SITE_NAME' is assigned a value but never used. Allowed unused vars must match /^_/u     @typescript-eslint/no-unused-vars
+
+C:\xampp\htdocs\trad\storefront\src\components\layout\navbar\TopBar.tsx
+  8:19  error  'setMounted' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+Γ£û 3 problems (3 errors, 0 warnings)
+

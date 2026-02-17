@@ -1,0 +1,8 @@
+[00:00:02.162] Server  LOG      ✓ Ready in 1597ms
+[00:00:05.205] Server  LOG      ○ Compiling / ...
+[00:00:08.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.065] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:00:20.129] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:06:54.027] Server  LOG      ✓ Compiled in 243ms
+[00:09:51.591] Server  LOG      ✓ Compiled in 240ms
+[00:11:43.287] Server  LOG      ✓ Compiled in 224ms

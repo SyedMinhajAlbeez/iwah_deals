@@ -1,0 +1,3 @@
+{
+  "/api/checkout/placeOrder/route": "app/api/checkout/placeOrder/route.js"
+}

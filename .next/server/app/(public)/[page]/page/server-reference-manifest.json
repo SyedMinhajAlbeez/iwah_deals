@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60838961e350b989758f692a18f0901df6432d256c": {
+      "workers": {
+        "app/(public)/[page]/page": {
+          "moduleId": 30578,
+          "async": false,
+          "exportedName": "userSubscribe",
+          "filename": "storefront/src/utils/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/[page]/page": "action-browser"
+      },
+      "exportedName": "userSubscribe",
+      "filename": "storefront/src/utils/actions.ts"
+    }
+  },
+  "edge": {}
+}

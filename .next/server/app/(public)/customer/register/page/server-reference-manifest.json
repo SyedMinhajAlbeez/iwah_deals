@@ -1,0 +1,35 @@
+{
+  "node": {
+    "60838961e350b989758f692a18f0901df6432d256c": {
+      "workers": {
+        "app/(public)/customer/register/page": {
+          "moduleId": 69273,
+          "async": false,
+          "exportedName": "userSubscribe",
+          "filename": "storefront/src/utils/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/customer/register/page": "action-browser"
+      },
+      "exportedName": "userSubscribe",
+      "filename": "storefront/src/utils/actions.ts"
+    },
+    "40b33013dfdafc30144220151e1dd2917b25d131b7": {
+      "workers": {
+        "app/(public)/customer/register/page": {
+          "moduleId": 69273,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "storefront/src/utils/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/customer/register/page": "action-browser"
+      },
+      "exportedName": "createUser",
+      "filename": "storefront/src/utils/actions.ts"
+    }
+  },
+  "edge": {}
+}

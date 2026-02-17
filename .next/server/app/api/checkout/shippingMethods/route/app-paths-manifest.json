@@ -1,0 +1,3 @@
+{
+  "/api/checkout/shippingMethods/route": "app/api/checkout/shippingMethods/route.js"
+}
