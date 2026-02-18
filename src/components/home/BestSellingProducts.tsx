@@ -182,7 +182,7 @@ const BestSellingProducts: FC = () => {
         {/* Header */}
         <div className="flex items-center justify-between mb-6 ml-2 mt-1">
           <h2 className="text-xl md:text-2xl font-bold text-gray-900">
-            Best Selling Products
+            Best Selling Products.
           </h2>
           <Link
             href="/products"
