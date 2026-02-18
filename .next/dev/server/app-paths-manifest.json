@@ -1,4 +1,7 @@
 {
+  "/(public)/[page]/page": "app/(public)/[page]/page.js",
   "/(public)/page": "app/(public)/page.js",
+  "/(public)/search/[collection]/page": "app/(public)/search/[collection]/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

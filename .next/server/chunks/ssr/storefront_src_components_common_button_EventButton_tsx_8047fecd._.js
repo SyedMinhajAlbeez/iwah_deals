@@ -1,3 +1,0 @@
-module.exports=[78113,a=>{"use strict";var b=a.i(66658),c=a.i(30712),d=a.i(6086),e=a.i(40070),f=a.i(91741),g=a.i(94177);function h({buttonName:a,redirectNav:h}){let i=(0,f.useRouter)(),j=(0,c.useAppDispatch)();return(0,g.useEffect)(()=>{j((0,d.clearCart)())},[]),(0,b.jsx)("button",{"aria-label":a,className:(0,e.default)(" my-3 w-auto items-center cursor-pointer justify-center rounded-full border-white bg-blue-600 px-12 py-4 text-sm font-bold tracking-wide text-white",{"hover:opacity-90":!0}),type:"button",onClick:()=>{i.push(h)},children:a})}function i({buttonName:a,redirect:c}){return(0,b.jsx)(h,{buttonName:a,redirectNav:c})}a.s(["EventButton",()=>i])}];
-
-//# sourceMappingURL=storefront_src_components_common_button_EventButton_tsx_8047fecd._.js.map

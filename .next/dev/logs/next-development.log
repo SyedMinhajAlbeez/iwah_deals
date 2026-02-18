@@ -1,5 +1,224 @@
-[00:00:03.010] Server  LOG      ✓ Ready in 2.3s
-[00:00:07.174] Server  LOG      ○ Compiling / ...
-[00:00:29.879] Server  LOG      ○ Compiling /api/auth/[...nextauth] ...
-[00:00:33.023] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
-[00:00:36.598] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:00:02.440] Server  LOG      ✓ Ready in 1966ms
+[00:00:05.544] Server  LOG      ○ Compiling /search/[collection] ...
+[00:00:19.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.884] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:20.793] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.350] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:22.057] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. section-eastern
+[00:00:22.058] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. section-eastern
+[00:00:22.058] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <$f57aed4a881a3485$var$OverlayContainerDOM>
+      <div data-overlay-container={true} aria-hidden={undefined}>
+        <$ea8dcbcb9ea1b556$export$323e4fc2fa4753fb navigate={function push} useHref={undefined}>
+          <J attribute="class" defaultTheme="light" enableSystem={false}>
+            <V attribute="class" defaultTheme="light" enableSystem={false}>
+              <script>
+              <SessionProvider>
+                <SessionProvider>
+                  <ToastProvider>
+                    <ToastContainer>
+                      <div
++                       className="fixed left-1/2 z-[999] w-[80%] -translate-x-1/2 sm:max-w-md   top-4 bottom-auto   m..."
+-                       className="fixed left-1/2 z-[999] w-[80%] -translate-x-1/2 sm:max-w-md top-4 bottom-auto md:bo..."
+                      >
+                    ...
+                      <div className="w-full max...">
+                        <CollectionSectionBlock section={{id:"sectio...", ...}}>
+                          <div className="flex flex-...">
+                            <Banner>
+                            <CategoryRow category={{id:"arabic...", ...}}>
+                              <div className="w-full rou...">
+                                <div
++                                 className="flex items-center justify-between mb-4"
+-                                 className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
+                                >
+                                  <h2>
+                                  <LinkComponent href="/collectio..." className="text-xs fo...">
+                                    <a
++                                     className="text-xs font-semibold text-purple-600 border border-purple-300 rounde..."
+-                                     className="inline-flex w-fit shrink-0 items-center justify-center whitespace-now..."
+                                      ref={function}
+                                      onClick={function onClick}
+                                      onMouseEnter={function onMouseEnter}
+                                      onTouchStart={function onTouchStart}
+                                      href="/collections/arabic"
+                                    >
++                                     See All Products
+                                ...
+                            <CategoryRow category={{id:"arabic...", ...}}>
+                              <div className="w-full rou...">
+                                <div
++                                 className="flex items-center justify-between mb-4"
+-                                 className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
+                                >
+                                  <h2>
+                                  <LinkComponent href="/collectio..." className="text-xs fo...">
+                                    <a
++                                     className="text-xs font-semibold text-purple-600 border border-purple-300 rounde..."
+-                                     className="inline-flex w-fit shrink-0 items-center justify-center whitespace-now..."
+                                      ref={function}
+                                      onClick={function onClick}
+                                      onMouseEnter={function onMouseEnter}
+                                      onTouchStart={function onTouchStart}
+                                      href="/collections/arabic-mens"
+                                    >
++                                     See All Products
+                                ...
+                        <CollectionSectionBlock section={{id:"sectio...", ...}}>
+                          <div className="flex flex-...">
+                            <Banner>
+                            <CategoryRow category={{id:"easter...", ...}}>
+                              <div className="w-full rou...">
+                                <div
++                                 className="flex items-center justify-between mb-4"
+-                                 className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
+                                >
+                                  <h2>
+                                  <LinkComponent href="/collectio..." className="text-xs fo...">
+                                    <a
++                                     className="text-xs font-semibold text-purple-600 border border-purple-300 rounde..."
+-                                     className="inline-flex w-fit shrink-0 items-center justify-center whitespace-now..."
+                                      ref={function}
+                                      onClick={function onClick}
+                                      onMouseEnter={function onMouseEnter}
+                                      onTouchStart={function onTouchStart}
+                                      href="/collections/eastern"
+                                    >
++                                     See All Products
+                                ...
+                            <CategoryRow category={{id:"easter...", ...}}>
+                              <div className="w-full rou...">
+                                <div
++                                 className="flex items-center justify-between mb-4"
+-                                 className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
+                                >
+                                  <h2>
+                                  <LinkComponent href="/collectio..." className="text-xs fo...">
+                                    <a
++                                     className="text-xs font-semibold text-purple-600 border border-purple-300 rounde..."
+-                                     className="inline-flex w-fit shrink-0 items-center justify-center whitespace-now..."
+                                      ref={function}
+                                      onClick={function onClick}
+                                      onMouseEnter={function onMouseEnter}
+                                      onTouchStart={function onTouchStart}
+                                      href="/collections/eastern"
+                                    >
++                                     See All Products
+                                ...
+                        <CollectionSectionBlock section={{id:"sectio...", ...}}>
+                          <div className="flex flex-...">
+                            <Banner>
+                            <CategoryRow category={{id:"easter...", ...}}>
+                              <div className="w-full rou...">
+                                <div
++                                 className="flex items-center justify-between mb-4"
+-                                 className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
+                                >
+                                  <h2 className="text-lg fo...">
++                                   Arabic Collection
+-                                   Accessories
+                                    ...
+                                  ...
+                                ...
+                            ...
+              ...
+
+[00:00:22.058] Browser WARN    Image with src "http://localhost:3000/image/men.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.058] Browser WARN    Image with src "http://localhost:3000/image/gadget.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.058] Browser WARN    Image with src "http://localhost:3000/image/kids_fasions.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.410] Browser WARN    Image with src "http://localhost:3000/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <$f57aed4a881a3485$var$OverlayContainerDOM>
+      <div data-overlay-container={true} aria-hidden={undefined}>
+        <$ea8dcbcb9ea1b556$export$323e4fc2fa4753fb navigate={function push} useHref={undefined}>
+          <J attribute="class" defaultTheme="light" enableSystem={false}>
+            <V attribute="class" defaultTheme="light" enableSystem={false}>
+              <script>
+              <SessionProvider>
+                <SessionProvider>
+                  <ToastProvider>
+                    <ToastContainer>
+                      <div
++                       className="fixed left-1/2 z-[999] w-[80%] -translate-x-1/2 sm:max-w-md   top-4 bottom-auto   m..."
+-                       className="fixed left-1/2 z-[999] w-[80%] -translate-x-1/2 sm:max-w-md top-4 bottom-auto md:bo..."
+                      >
+                    ...
+                      <SegmentViewNode type="page" pagePath="/Desktop/i...">
+                        <SegmentTrieNode>
+                        <Home>
+                          <RenderThemeCustomization>
+                            <MobileSearchBar>
+                            <Home>
+                              <RenderThemeCustomization>
+                                <section className="w-full max...">
+                                  <ImageCarousel>
+                                  <div>
+                                    <Suspense>
+                                    <BestSellingProducts>
+                                    <ArabicCollectionSection>
+                                      <div
++                                       className="w-full max-w-7xl mx-auto flex flex-col gap-6 pb-12"
+-                                       className="w-full max-w-8xl mx-auto flex flex-col gap-12 px-4 pb-16"
+                                      >
+                                        <Banner banner={{src:"/imag...", ...}}>
++                                         <section className="w-full px-4 py-8 md:py-10">
+-                                         <div className="flex flex-col gap-6">
+                                        ...
+                      ...
+              ...
+
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/men.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/gadget.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.411] Browser WARN    Image with src "http://localhost:3000/image/kids_fasions.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.439] Browser WARN    Image with src "http://localhost:3000/image/men.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.440] Browser WARN    Image with src "http://localhost:3000/image/gadget.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.440] Browser WARN    Image with src "http://localhost:3000/image/kids_fasions.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.314] Browser WARN    Image with src "http://localhost:3000/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.314] Browser WARN    Image with src "http://localhost:3000/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.314] Browser WARN    Image with src "http://localhost:3000/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.314] Browser WARN    Image with src "http://localhost:3000/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.314] Browser WARN    Image with src "http://localhost:3000/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.314] Browser WARN    Image with src "http://localhost:3000/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.314] Browser WARN    Image with src "http://localhost:3000/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.590] Browser WARN    Image with src "http://localhost:3000/image/men.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.590] Browser WARN    Image with src "http://localhost:3000/image/gadget.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:23.590] Browser WARN    Image with src "http://localhost:3000/image/kids_fasions.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:24.514] Server  LOG      ○ Compiling /_not-found/page ...
+[00:00:27.383] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:00:30.381] Server  LOG      ○ Compiling /[page] ...
+[00:00:30.900] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:00:31.666] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:00:32.352] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:00:33.646] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:00:39.058] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:39.075] Server  ERROR    ⨯ Error: {"message":"Internal server error","locations":[{"line":3,"column":5}],"path":["pageByUrlKeypages"]}

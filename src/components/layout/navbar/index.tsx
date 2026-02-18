@@ -28,8 +28,8 @@ export default function Navbar() {
       <TopBar />
 
       <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 w-full shadow-sm">
-        <div className="px-3 sm:px-4 md:px-6 lg:px-8 2xl:px-10 py-2.5 sm:py-3 md:py-3.5 lg:py-4 mx-auto w-full">
-          <div className="flex items-center justify-between gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8">
+        <div className="px-4 xss:px-7.5 py-2.5 sm:py-3 md:py-3.5 lg:py-4 mx-auto w-full max-w-screen-2xl">
+          <div className="flex items-center justify-between md:justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 flex-wrap">
 
             {/* Logo - Responsive sizing */}
             <div className="flex-shrink-0">
@@ -44,7 +44,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Menu + Our Deals - Hidden on tablet and below */}
-            <div className="hidden lg:flex items-center gap-3 xl:gap-4 flex-1">
+            <div className="hidden lg:flex items-center gap-3 xl:gap-4 flex-shrink-0">
               <ul className="flex items-center gap-3 xl:gap-4 list-none m-0 p-0">
                 {menuItems.map((item, idx) => (
                   <li key={idx}>
@@ -74,8 +74,8 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* Search Bar - Visible on md and up */}
-            <div className="hidden md:flex items-center flex-1 max-w-sm lg:max-w-md xl:max-w-lg mx-2">
+            {/* Search Bar - Visible on md and up - fixed width so it doesn't stretch */}
+            <div className="hidden md:flex items-center flex-shrink-0 w-[260px] sm:w-[300px] lg:w-[340px]">
               <form onSubmit={handleSearch} className="w-full relative">
                 <input
                   type="text"
@@ -95,7 +95,7 @@ export default function Navbar() {
               </form>
             </div>
 
-            {/* Right Icons Section - Responsive */}
+            {/* Right Icons + Mobile Menu - grouped so mobile has logo | (icons + menu) */}
             <div className="flex items-center gap-1.5 lg:gap-2">
               {/* Globe Icon - lg and up */}
               <button
@@ -123,21 +123,21 @@ export default function Navbar() {
               >
                 <User size={18} className="text-gray-700" />
               </button>
-            </div>
 
-            {/* Mobile Menu Toggle - Hidden on md and up */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-1.5 sm:p-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#089BC7]"
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMobileMenuOpen}
-            >
-              {isMobileMenuOpen ? (
-                <X size={24} className="sm:w-6 sm:h-6" />
-              ) : (
-                <Menu size={24} className="sm:w-6 sm:h-6" />
-              )}
-            </button>
+              {/* Mobile Menu Toggle - Hidden on md and up */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden p-1.5 sm:p-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#089BC7]"
+                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMobileMenuOpen}
+              >
+                {isMobileMenuOpen ? (
+                  <X size={24} className="sm:w-6 sm:h-6" />
+                ) : (
+                  <Menu size={24} className="sm:w-6 sm:h-6" />
+                )}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu - Full responsive dropdown */}

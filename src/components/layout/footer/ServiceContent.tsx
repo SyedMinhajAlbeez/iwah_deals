@@ -1,14 +1,11 @@
 "use client";
 
-import { FC, JSX } from "react";
+import { FC } from "react";
+import Image from "next/image";
 import { OptionDataTypes } from "@/types/types";
 import { ThemeCustomizationTranslationNode } from "@/types/theme/theme-customization";
 import { usePathname } from "next/navigation";
 import { safeParse } from "@utils/helper";
-import VectorIcon from "@components/common/icons/service/VectorIcon";
-import TruckIcon from "@components/common/icons/service/TruckIcon";
-import SofaIcon from "@components/common/icons/service/SofaIcon";
-import AssuranceIcon from "@components/common/icons/service/AssuranceIcon";
 
 export interface ServiceContentDataTypes {
   name?: string;
@@ -32,18 +29,9 @@ const ServiceContent: FC<ServiceContentDataTypes> = ({ serviceData }) => {
   });
 };
 
-const iconMapping: Record<string, JSX.Element> = {
-  "icon-truck": <VectorIcon />,
-  "icon-product": <TruckIcon />,
-  "icon-dollar-sign": <SofaIcon />,
-  "icon-support": <AssuranceIcon />,
-};
-
 const ServiceCarouselRender: FC<ServiceContenRenderTypes> = ({
-  serviceList,
+  serviceList: _serviceList,
 }) => {
-  const { options } = serviceList;
-  const { services } = options;
   const pathname = usePathname();
 
   // Don't render service content on customer auth pages
@@ -55,24 +43,30 @@ const ServiceCarouselRender: FC<ServiceContenRenderTypes> = ({
     return null;
   }
 
-  return (
-    <div className="flex items-center justify-center gap-6 max-lg:flex-wrap max-md:grid max-md:grid-cols-2 max-md:gap-x-4 max-md:gap-y-8 max-md:text-center md:gap-10 lg:gap-20">
-      {services?.map((list, index: number) => {
-        const iconKey = list?.service_icon;
+  const partners = Array.from({ length: 7 }, (_, idx) => ({
+    src: `/image/partners/partner${idx + 1}.png`,
+    alt: `Partner ${idx + 1}`,
+  }));
 
-        return (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center gap-3 max-md:gap-3 max-md:px-4 max-md:py-2"
-          >
-            {iconMapping[iconKey]}
-            <p className="mt-2.5 max-w-[217px] text-center font-outfit text-sm font-medium max-md:mt-0 max-md:text-base max-sm:text-xs">
-              {list.description}
-            </p>
-          </div>
-        );
-      })}
-    </div>
+  return (
+    <section className="w-full rounded-2xl bg-[#202020] px-6 py-10">
+      <h2 className="mx-auto flex h-[60px] w-[248px] items-center justify-center text-center font-['Poppins'] text-[40px] font-semibold leading-[40px] text-white">
+        Partner with
+      </h2>
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+        {partners.map((partner) => (
+          <Image
+            key={partner.src}
+            src={partner.src}
+            alt={partner.alt}
+            width={153}
+            height={79}
+            className="h-[79px] w-[153px] object-contain"
+            loading="lazy"
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 

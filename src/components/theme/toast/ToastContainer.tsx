@@ -1,10 +1,15 @@
-import { useToast } from "@/providers/ToastProvider";
+"use client";
+
+import type { ToastDataType } from "@/providers/ToastProvider";
 import { Toast } from "./Toast";
 
-
-export const ToastContainer = () => {
-  const { toasts, removeToast } = useToast();
-
+export const ToastContainer = ({
+  toasts,
+  onRemove,
+}: {
+  toasts: ToastDataType[];
+  onRemove: (_: string) => void;
+}) => {
   return (
     <div
       className="fixed left-1/2 z-[999] w-[80%] -translate-x-1/2 sm:max-w-md
@@ -12,7 +17,7 @@ export const ToastContainer = () => {
         md:bottom-4 md:top-auto"
     >
       {toasts.map((toast) => (
-        <Toast key={toast.id} toast={toast} onRemove={removeToast} />
+        <Toast key={toast.id} toast={toast} onRemove={onRemove} />
       ))}
     </div>
   );

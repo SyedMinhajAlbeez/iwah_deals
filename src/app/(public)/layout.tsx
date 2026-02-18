@@ -8,12 +8,12 @@ export default async function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <main>
+    <>
       <Navbar />
       <div className="mx-auto min-h-[calc(100vh-580px)] w-full">
         {children}
       </div>
       <Footer />
-    </main>
+    </>
   );
 }

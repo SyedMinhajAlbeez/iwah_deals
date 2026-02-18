@@ -65,8 +65,6 @@ const Subscribe = () => {
       className="mt-4 md:mt-0 md:px-0 relative"
       onSubmit={handleSubmit(onSubmit)}
     >
-     
-
       <div className="mt-4 flex gap-x-3">
         <input
           type="email"
@@ -79,19 +77,18 @@ const Subscribe = () => {
             },
           })}
           className={clsx(
-            "block  w-full xl:min-w-[283px] p-2.5 text-sm focus:border-blue-200 border border-neutral-200 bg-white  text-black outline-none placeholder:text-neutral-500 focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-transparent dark:text-white dark:placeholder:text-neutral-400 ",
+            "block w-full xl:min-w-[283px] p-2.5 text-sm bg-white border border-gray-300 text-black outline-none placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-md",
             errors.email || status?.email
-              ? "border-red-500 dark:border-red-500"
-              : "border-gray-300 dark:border-neutral-200"
+              ? "border-red-500 focus:ring-red-500 focus:border-red-500"
+              : "border-gray-300"
           )}
           placeholder="Email Address"
         />
         <Button
           className={clsx(
-            "relative flex font-medium w-full min-w-32 max-w-32 items-center justify-center !rounded-2xl border-1 border-solid border-neutral-600 bg-transparent px-5 py-2.5 font-outfit text-[15px]  tracking-wide dark:!text-white !text-neutral-600",
+            "relative flex font-medium w-full min-w-32 max-w-32 items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-2.5 text-white text-[15px] tracking-wide hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
             {
-              "hover:opacity-90": !isSubmitting,
-              "cursor-not-allowed opacity-50": isSubmitting,
+              "opacity-50 cursor-not-allowed": isSubmitting || loading,
             }
           )}
           disabled={loading || isSubmitting}
@@ -102,7 +99,7 @@ const Subscribe = () => {
       </div>
 
       {errors.email && (
-        <p className="mt-1 absolute left-0 -bottom-2.5 text-sm text-red-600 dark:text-red-400">
+        <p className="mt-1 absolute left-0 -bottom-2.5 text-sm text-red-600">
           {errors.email.message}
         </p>
       )}
@@ -111,3 +108,121 @@ const Subscribe = () => {
 };
 
 export default Subscribe;
+
+
+
+
+
+// "use client";
+
+// import { useEffect, useState } from "react";
+// import clsx from "clsx";
+// import { useForm } from "react-hook-form";
+// import { RecoverPasswordFormState } from "@components/customer/types";
+// import { Button } from "@components/common/button/LoadingButton";
+// import { userSubscribe } from "@utils/actions";
+// import { useCustomToast } from "@utils/hooks/useToast";
+// import { EMAIL_REGEX } from "@utils/constants";
+
+// type FormValues = {
+//   email: string;
+// };
+
+// const Subscribe = () => {
+//   const [loading, setLoading] = useState<boolean>(false);
+//   const {
+//     register,
+//     handleSubmit,
+//     reset,
+//     formState: { errors, isSubmitting },
+//   } = useForm<FormValues>({ mode: "onSubmit" });
+//   const { showToast } = useCustomToast();
+
+//   const [status, setStatus] = useState<
+//     RecoverPasswordFormState["errors"] | null
+//   >(null);
+
+//   const onSubmit = async (data: FormValues) => {
+//     setStatus(null);
+//     const formData = new FormData();
+
+//     formData.append("email", data.email);
+//     setLoading(true);
+//     const result = await userSubscribe(undefined as any, formData);
+
+//     setStatus(result?.errors || null);
+//     if (result?.errors?.apiRes?.status) {
+//       reset();
+//     }
+//     setLoading(false);
+//   };
+
+//   useEffect(() => {
+//     if (status) {
+//       setTimeout(() => {
+//         setStatus(null);
+//       }, 3500);
+//     }
+//     if (status?.email) {
+//       showToast(status?.email[0], "warning");
+//     }
+//     if (status?.apiRes?.status === false) {
+//       showToast(status?.apiRes?.msg, "warning");
+//     }
+//     if (status?.apiRes?.status === true) {
+//       showToast("Successfully Subscribed", "success");
+//     }
+//   }, [status]);
+
+//   return (
+//     <form
+//       noValidate
+//       className="mt-4 md:mt-0 md:px-0 relative"
+//       onSubmit={handleSubmit(onSubmit)}
+//     >
+     
+
+//       <div className="mt-4 flex gap-x-3">
+//         <input
+//           type="email"
+//           aria-label="Email Address"
+//           {...register("email", {
+//             required: "Email is required",
+//             pattern: {
+//               value: EMAIL_REGEX,
+//               message: "Enter a valid email",
+//             },
+//           })}
+//           className={clsx(
+//             "block  w-full xl:min-w-[283px] p-2.5 text-sm focus:border-blue-200 border border-neutral-200 bg-white  text-black outline-none placeholder:text-neutral-500 focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-transparent dark:text-white dark:placeholder:text-neutral-400 ",
+//             errors.email || status?.email
+//               ? "border-red-500 dark:border-red-500"
+//               : "border-gray-300 dark:border-neutral-200"
+//           )}
+//           placeholder="Email Address"
+//         />
+//         <Button
+//           className={clsx(
+//             "relative flex font-medium w-full min-w-32 max-w-32 items-center justify-center !rounded-2xl border-1 border-solid border-neutral-600 bg-transparent px-5 py-2.5 font-outfit text-[15px]  tracking-wide dark:!text-white !text-neutral-600",
+//             {
+//               "hover:opacity-90": !isSubmitting,
+//               "cursor-not-allowed opacity-50": isSubmitting,
+//             }
+//           )}
+//           disabled={loading || isSubmitting}
+//           loading={loading || isSubmitting}
+//           title="Subscribe"
+//           type="submit"
+//         />
+//       </div>
+
+//       {errors.email && (
+//         <p className="mt-1 absolute left-0 -bottom-2.5 text-sm text-red-600 dark:text-red-400">
+//           {errors.email.message}
+//         </p>
+//       )}
+//     </form>
+//   );
+// };
+
+// export default Subscribe;

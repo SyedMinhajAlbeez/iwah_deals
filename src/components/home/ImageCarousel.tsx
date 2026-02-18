@@ -153,7 +153,7 @@ export default function ImageCarousel() {
 
             {/* Exclusive Deals Banner */}
             <Link href="/exclusive-deals" className="block w-full">
-                <div className="relative w-full rounded-3xl overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+                <div className="relative w-full rounded-3xl overflow-hidden group ">
                     <div className="relative w-full" style={{ height: "194px", aspectRatio: "16 / 4" }}>
                         <Image
                             src="/image/webBanner7.gif"

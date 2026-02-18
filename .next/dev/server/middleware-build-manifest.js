@@ -16,8 +16,8 @@ globalThis.__BUILD_MANIFEST = {
     "static/chunks/1ceb0_next_dist_client_fd688c24._.js",
     "static/chunks/1ceb0_next_dist_51bebb47._.js",
     "static/chunks/2935c_@swc_helpers_cjs_42f51396._.js",
-    "static/chunks/Desktop_iwah_Iwah_deals_a0ff3932._.js",
-    "static/chunks/turbopack-Desktop_iwah_Iwah_deals_dbac12b8._.js"
+    "static/chunks/Desktop_iwah_Iwah_deals_iwah_deals_a0ff3932._.js",
+    "static/chunks/turbopack-Desktop_iwah_Iwah_deals_iwah_deals_dbac12b8._.js"
   ]
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
