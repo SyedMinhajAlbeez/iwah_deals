@@ -283,10 +283,10 @@ const BestSellingProducts: FC = () => {
                     {/* Price */}
                     <div className="flex items-center gap-2">
                       <span className="text-xs text-gray-400 line-through">
-                        ${product.originalPrice.toFixed(2)}
+                        BHD{product.originalPrice.toFixed(2)}
                       </span>
                       <span className="text-lg font-bold text-gray-900">
-                        ${product.price.toFixed(2)}
+                        BHD{product.price.toFixed(2)}
                       </span>
                     </div>
                   </div>

@@ -165,7 +165,7 @@ const FooterMenu = () => {
     shop@email.com
   </a>
 </p>
-    <p className="text-sm font-medium">USD $</p>
+    <p className="text-sm font-medium">BHD: BHD</p>
   </div>
 </div>
       </div>

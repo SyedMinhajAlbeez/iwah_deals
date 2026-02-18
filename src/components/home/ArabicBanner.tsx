@@ -721,7 +721,7 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
                 marginBottom: 1,
               }}
             >
-              ${product.originalPrice.toFixed(2)}
+              BHD{product.originalPrice.toFixed(2)}
             </p>
           )}
           <p
@@ -733,7 +733,7 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
               lineHeight: "130%",
             }}
           >
-            ${product.price.toFixed(2)}
+            BHD{product.price.toFixed(2)}
           </p>
         </div>
       </div>
