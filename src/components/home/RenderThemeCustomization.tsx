@@ -29,6 +29,7 @@ const RenderThemeCustomization: FC<RenderThemeCustomizationProps> = ({
       <MobileSearchBar />
       <section className="w-full max-w-screen-2xl mx-auto pb-4 px-4 xss:px-7.5">
         {sortedEdges.map(({ node }) => {
+       console.log("chekcnewww",node)
           const translation =
             node.translations.edges.find((e) => e.node.locale === "en") ||
             node.translations.edges[0];

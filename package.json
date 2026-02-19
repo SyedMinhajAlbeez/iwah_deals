@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "eslint . && next build",
-    "start": "next start",
+    "build": "next build",
+    "start": "next start -p 8003",
     "lint": "eslint .",
-    "lint:fix": "next lint --fix",
-    "package-version": "npx npm-check-updates"
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@apollo/client": "^3.11.10",

@@ -3,7 +3,7 @@ export {
 } from "./Footer"
 
 export {
-GET_THEME_CUSTOMIZATION
+    GET_THEME_CUSTOMIZATION
 } from "./ThemeCustomization"
 
 export {

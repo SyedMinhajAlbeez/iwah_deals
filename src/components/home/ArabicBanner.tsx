@@ -19,6 +19,7 @@ export interface Product {
   reviewCount: number;
   inStock: boolean;
   isWishlisted?: boolean;
+  description?: string;
 }
 
 export interface Category {
@@ -42,7 +43,7 @@ export interface CollectionSection {
 export type CollectionPageData = CollectionSection[];
 
 // ─────────────────────────────────────────────
-// Dummy data — used directly (no image remapping)
+// Dummy data — used directly
 // ─────────────────────────────────────────────
 const RAW_DUMMY_DATA: CollectionPageData = [
   {
@@ -71,6 +72,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             reviewCount: 41,
             inStock: true,
             isWishlisted: true,
+            description: `This adorable ensemble features sage green overalls with a playful character detail, perfectly paired with a soft, pastel-striped long-sleeve top. Designed for both comfort and style, it’s the ideal outfit for your little one's daily adventures and playdates adorable ensemble features sage green overalls with a playful character detail, perfectly paired with a soft, pastel-striped long-sleeve top. Designed for both comfort and style, it’s the ideal outfit for your little one's daily adventures and playdates.`,
           },
           {
             id: "a2",
@@ -80,10 +82,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/arabicCollection2.png",
-
             rating: 4,
             reviewCount: 14,
             inStock: false,
+            description: "Elegant deep violet tones meet classic Arabic silhouettes. This collection piece highlights the harmony between traditional craftsmanship and modern design.",
           },
           {
             id: "a3",
@@ -93,10 +95,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             price: 499,
             originalPrice: 495,
             image: "/image/sliderImages/arabicCollection3.png",
-
             rating: 2,
             reviewCount: 40,
             inStock: true,
+            description: "The Emily set defines understated luxury with its soft textures and minimalist gold detailing on premium silk. An essential for any sophisticated wardrobe.",
           },
           {
             id: "a4",
@@ -106,10 +108,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/arabicCollection4.png",
-
             rating: 4,
             reviewCount: 14,
             inStock: true,
+            description: "A bold statement piece in royal hues, the Vesper features hand-stitched beadwork and a flowing design that exudes confidence and grace.",
           },
           {
             id: "a5",
@@ -119,10 +121,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/arabicCollection5.png",
-
             rating: 4,
             reviewCount: 41,
             inStock: true,
+            description: "An updated version of our signature Rosette series, this piece brings a lighter touch with ethereal lace patterns and a comfortable tailored fit.",
           },
         ],
       },
@@ -143,6 +145,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 5,
             reviewCount: 22,
             inStock: true,
+            description: "Regal and commanding, the Sultan Noir set uses the finest midnight black silk with silver metallic threads, reflecting the mystery of the Arabian night.",
           },
           {
             id: "am2",
@@ -156,6 +159,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             reviewCount: 9,
             inStock: true,
             isWishlisted: true,
+            description: "Inspired by the golden dunes, this sand-toned ensemble offers breathability and a sturdy texture for the modern explorer of tradition.",
           },
           {
             id: "am3",
@@ -168,6 +172,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 4,
             reviewCount: 17,
             inStock: false,
+            description: "The Al Rashid collection combines classic paisley motifs with a tailored structure that bridges the gap between Eastern heritage and Western precision.",
           },
           {
             id: "am4",
@@ -180,6 +185,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 4,
             reviewCount: 31,
             inStock: true,
+            description: "Named after the desert wind, this lightweight set features micro-pleats and a unique texture that creates movement as you walk.",
           },
           {
             id: "am5",
@@ -192,6 +198,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 3,
             reviewCount: 6,
             inStock: true,
+            description: "A shimmering gold-flecked fabric that captures the light. This ensemble is designed for celebrations where you want to shine without compromise.",
           },
         ],
       },
@@ -212,7 +219,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
         seeAllHref: "/collections/eastern",
         products: [
           {
-            id: "e1",
+            id: "e-m-1",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
@@ -223,9 +230,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             reviewCount: 12,
             inStock: true,
             isWishlisted: true,
+            description: "A masculine take on the Rosette theme, this deep blush set features structured shoulders and subtle floral motifs in charcoal thread.",
           },
           {
-            id: "e2",
+            id: "e-m-2",
             name: "VIOLETS ECLIPS",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
@@ -235,9 +243,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 4,
             reviewCount: 8,
             inStock: false,
+            description: "A dark violet formal set designed for evening galas. The fabric has a slight sheen that catches the light beautifully under night skies.",
           },
           {
-            id: "e3",
+            id: "e-m-3",
             name: "EMILY",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "05 – CATALOG",
@@ -247,9 +256,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 3,
             reviewCount: 40,
             inStock: true,
+            description: "Clean lines and a focus on texture define this luxury silk piece. It offers a cool, breathable fit for warm climates without sacrificing style.",
           },
           {
-            id: "e4",
+            id: "e-m-4",
             name: "VESPER",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "06 – CATALOG",
@@ -260,9 +270,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             reviewCount: 14,
             inStock: true,
             isWishlisted: true,
+            description: "The Vesper Men's edition: A fusion of tradition and modernity, featuring a hidden placket and sharp tailoring for a sophisticated silhouette.",
           },
           {
-            id: "e5",
+            id: "e-m-5",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
@@ -272,17 +283,18 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 4,
             reviewCount: 41,
             inStock: true,
+            description: "Comfort meets class in this daily formal wear. The blush tones are muted to provide a versatile look that pairs well with various accessories.",
           },
         ],
       },
       {
-        id: "eastern-mens", // ← fixed duplicate id from your original
+        id: "eastern-mens",
         title: "Eastern Collection",
         subtitle: "Men's Wear",
         seeAllHref: "/collections/eastern",
         products: [
           {
-            id: "e1",
+            id: "east-m-1",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
@@ -293,9 +305,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             reviewCount: 12,
             inStock: true,
             isWishlisted: true,
+            description: "Authentic eastern craftsmanship in a soft blush hue. This piece uses traditional weaving techniques to create a fabric that is both durable and elegant.",
           },
           {
-            id: "e2",
+            id: "east-m-2",
             name: "VIOLETS ECLIPS",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
@@ -305,9 +318,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 4,
             reviewCount: 8,
             inStock: false,
+            description: "A standout violet ensemble with geometric embroidery that reflects the heritage of the East. Ideal for family gatherings and festive events.",
           },
           {
-            id: "e3",
+            id: "east-m-3",
             name: "EMILY",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "05 – CATALOG",
@@ -317,9 +331,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 3,
             reviewCount: 40,
             inStock: true,
+            description: "The Eastern Emily: A minimalist masterpiece in off-white raw silk, perfect for those who appreciate the beauty of simplicity and fine materials.",
           },
           {
-            id: "e4",
+            id: "east-m-4",
             name: "VESPER",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "06 – CATALOG",
@@ -330,9 +345,10 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             reviewCount: 14,
             inStock: true,
             isWishlisted: true,
+            description: "Bold, dark, and distinguished. The Eastern Vesper features a unique textured collar and premium pearl buttons for an added touch of luxury.",
           },
           {
-            id: "e5",
+            id: "east-m-5",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
@@ -342,6 +358,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             rating: 4,
             reviewCount: 41,
             inStock: true,
+            description: "A classic cut in a modern color. This Rosette blush set is a staple for any Eastern formal collection, offering timeless appeal and comfort.",
           },
         ],
       },
@@ -351,18 +368,18 @@ const RAW_DUMMY_DATA: CollectionPageData = [
     id: "section-easternn",
     banner: {
       src: "/image/webBanner8.png",
-      alt: "Accessories ",
+      alt: "Accessories",
       href: "/eastern-collection",
     },
     categories: [
       {
-        id: "eastern-womens",
+        id: "accessories-women",
         title: "Accessories",
         subtitle: "Women’s Wear",
         seeAllHref: "/collections/eastern",
         products: [
           {
-            id: "e1",
+            id: "acc-w-1",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
@@ -373,134 +390,135 @@ const RAW_DUMMY_DATA: CollectionPageData = [
             reviewCount: 12,
             inStock: true,
             isWishlisted: true,
+            description: "A delicate rosette blush clutch designed to complement formal ensembles. Hand-embroidered with silk threads and finished with a gold-tone clasp.",
           },
           {
-            id: "e2",
+            id: "acc-w-2",
             name: "VIOLETS ECLIPS",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/AccessoriesWomen2.png",
-
             rating: 4,
             reviewCount: 8,
             inStock: false,
+            description: "An elegant silk wrap in deep violet, featuring a subtle eclipse-inspired pattern. This versatile accessory adds warmth and sophistication to any look.",
           },
           {
-            id: "e3",
+            id: "acc-w-3",
             name: "EMILY",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "05 – CATALOG",
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/AccessoriesWomen3.png",
-
             rating: 3,
             reviewCount: 40,
             inStock: true,
+            description: "The Emily headband: A crown of raw silk with minimalist pearl accents. Designed to stay comfortable throughout long events while making a luxury statement.",
           },
           {
-            id: "e4",
+            id: "acc-w-4",
             name: "VESPER",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "06 – CATALOG",
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/AccessoriesWomen4.png",
-
             rating: 5,
             reviewCount: 14,
             inStock: true,
             isWishlisted: true,
+            description: "Bold and beautiful, the Vesper scarf is a large format accessory with hand-beaded edges and a vibrant floral print that draws the eye.",
           },
           {
-            id: "e5",
+            id: "acc-w-5",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
             price: 499,
             originalPrice: 410,
             image: "/image/sliderImages/AccessoriesWomen5.png",
-
             rating: 4,
             reviewCount: 41,
             inStock: true,
+            description: "A set of silk-wrapped buttons in rosette blush, perfect for customizing your favorite formal attire or adding a touch of color to a simple outfit.",
           },
         ],
       },
       {
-        id: "eastern-mens", // ← fixed duplicate id from your original
+        id: "accessories-men",
         title: "Accessories",
         subtitle: "Men's Wear",
         seeAllHref: "/collections/eastern",
         products: [
           {
-            id: "e1",
+            id: "acc-m-1",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
             price: 499,
             originalPrice: 419,
             image: "/image/sliderImages/AccessoriesMen1.png",
-
             rating: 4,
             reviewCount: 12,
             inStock: true,
             isWishlisted: true,
+            description: "A formal rosette blush pocket square for men, featuring a refined hem and a slight texture that stays in place all day.",
           },
           {
-            id: "e2",
+            id: "acc-m-2",
             name: "VIOLETS ECLIPS",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/AccessoriesMen2.png",
-
             rating: 4,
             reviewCount: 8,
             inStock: false,
+            description: "A set of dark violet cufflinks with a sunburst 'eclipse' engraving. A subtle yet powerful accessory for the modern gentleman.",
           },
           {
-            id: "e3",
+            id: "acc-m-3",
             name: "EMILY",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "05 – CATALOG",
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/AccessoriesMen3.png",
-
             rating: 3,
             reviewCount: 40,
             inStock: true,
+            description: "The Men's Emily belt: Handcrafted from raw silk on a sturdy leather base, providing a unique texture and premium feel for formal wear.",
           },
           {
-            id: "e4",
+            id: "acc-m-4",
             name: "VESPER",
             brand: "LUXE RAW SILK FORMALS",
             catalog: "06 – CATALOG",
             price: 499,
             originalPrice: 499,
             image: "/image/sliderImages/AccessoriesMen4.png",
-
             rating: 5,
             reviewCount: 14,
             inStock: true,
             isWishlisted: true,
+            description: "A distinguished silk cravat in royal blue with traditional hand-stitched patterns. Elevates any eastern formal look to new heights.",
           },
           {
-            id: "e5",
+            id: "acc-m-5",
             name: "ROSETTE BLUSH",
             brand: "FIORELLA FORMALS",
             catalog: "26 – CATALOG",
             price: 499,
             originalPrice: 410,
             image: "/image/sliderImages/AccessoriesMen5.png",
-
             rating: 4,
             reviewCount: 41,
             inStock: true,
+            description: "A pair of blush-toned dress socks made from the finest cotton-silk blend, offering unmatched comfort and a subtle pop of color.",
           },
         ],
       },
@@ -511,10 +529,7 @@ const RAW_DUMMY_DATA: CollectionPageData = [
 // ─────────────────────────────────────────────
 // Star Rating
 // ─────────────────────────────────────────────
-const StarRating: FC<{ rating: number; count: number }> = ({
-  rating,
-  count,
-}) => (
+const StarRating: FC<{ rating: number; count: number }> = ({ rating, count }) => (
   <div className="flex items-center gap-[3px]">
     {Array.from({ length: 5 }).map((_, i) => (
       <svg
@@ -544,12 +559,27 @@ const StarRating: FC<{ rating: number; count: number }> = ({
 );
 
 // ─────────────────────────────────────────────
-// Product Card (284 × 472)
+// Product Card
 // ─────────────────────────────────────────────
 const ProductCard: FC<{ product: Product }> = ({ product }) => {
+  const slug = product.name.toLowerCase().replace(/ /g, "-") + "-" + product.id;
+
+  const handleProductClick = () => {
+    // Save to sessionStorage for dynamic page to pick up
+    const fullProduct = {
+      ...product,
+      slug,
+      description: product.description,
+      thumbnails: [product.image],
+    };
+    sessionStorage.setItem("selectedProduct", JSON.stringify(fullProduct));
+  };
+
   return (
-    <div
-      className="relative flex-shrink-0 bg-white group cursor-pointer"
+    <Link
+      href={`/product/${slug}`}
+      onClick={handleProductClick}
+      className="relative flex-shrink-0 bg-white group cursor-pointer transition-shadow hover:shadow-lg no-underline block"
       style={{
         width: 284,
         height: 472,
@@ -574,6 +604,10 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
           border: "none",
           padding: 0,
         }}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+        }}
       >
         <svg
           width="17"
@@ -592,56 +626,28 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
       </button>
 
       {/* Stock badge */}
-      <div
-        className="absolute z-10 flex items-center"
-        style={{ top: 28, left: 182 }}
-      >
-        {product.inStock ? (
-          <span
-            className="flex items-center justify-center"
-            style={{
-              width: 70,
-              height: 18,
-              borderRadius: 13,
-              opacity: 1,
-              borderWidth: 1,
-              borderStyle: "solid",
-              fontFamily: "Poppins, sans-serif",
-              fontWeight: 500,
-              fontSize: 10,
-              color: "#47A01F",
-              lineHeight: "210%",
-              letterSpacing: 0,
-              whiteSpace: "nowrap",
-            }}
-          >
-            In stock
-          </span>
-        ) : (
-          <span
-            className="flex items-center justify-center"
-            style={{
-              width: 70,
-              height: 18,
-              borderRadius: 13,
-              opacity: 1,
-              borderWidth: 1,
-              borderStyle: "solid",
-              fontFamily: "Poppins, sans-serif",
-              fontWeight: 500,
-              fontSize: 10,
-              color: "#F97316",
-              lineHeight: "210%",
-              letterSpacing: 0,
-              whiteSpace: "nowrap",
-            }}
-          >
-            Out of stock
-          </span>
-        )}
+      <div className="absolute z-10 flex items-center" style={{ top: 28, left: 182 }}>
+        <span
+          className="flex items-center justify-center"
+          style={{
+            width: 70,
+            height: 18,
+            borderRadius: 13,
+            borderWidth: 1,
+            borderStyle: "solid",
+            fontFamily: "Poppins, sans-serif",
+            fontWeight: 500,
+            fontSize: 10,
+            color: product.inStock ? "#47A01F" : "#F97316",
+            borderColor: product.inStock ? "rgba(71,160,31,0.2)" : "rgba(249,115,22,0.2)",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {product.inStock ? "In stock" : "Out of stock"}
+        </span>
       </div>
 
-      {/* Product Image — 252 × 306 */}
+      {/* Product Image */}
       <div
         className="relative overflow-hidden"
         style={{
@@ -652,7 +658,6 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
           marginLeft: 16,
         }}
       >
-        {/* Background fill (blur effect) */}
         <Image
           src={product.image}
           alt=""
@@ -661,8 +666,6 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
           className="object-cover blur-md scale-110 brightness-95 transition-transform duration-500 group-hover:scale-125"
           sizes="252px"
         />
-
-        {/* Foreground image */}
         <Image
           src={product.image}
           alt={`${product.name} – ${product.brand}`}
@@ -675,8 +678,8 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
       {/* Info block */}
       <div style={{ paddingLeft: 16, paddingRight: 16, paddingTop: 12 }}>
         <StarRating rating={product.rating} count={product.reviewCount} />
-
         <p
+          className="line-clamp-1"
           style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 600,
@@ -684,17 +687,11 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
             color: "#1A1A1A",
             marginTop: 6,
             lineHeight: "150%",
-            letterSpacing: 0,
             textTransform: "uppercase",
           }}
-          className="line-clamp-1"
         >
-          {product.name}{" "}
-          <span style={{ fontWeight: 400, color: "#6B7280" }}>
-            {product.brand}
-          </span>
+          {product.name} <span style={{ fontWeight: 400, color: "#6B7280" }}>{product.brand}</span>
         </p>
-
         <p
           style={{
             fontFamily: "Poppins, sans-serif",
@@ -707,7 +704,6 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
         >
           ( {product.catalog} )
         </p>
-
         <div style={{ marginTop: 10 }}>
           {product.originalPrice !== product.price && (
             <p
@@ -737,7 +733,7 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -746,13 +742,9 @@ const ProductCard: FC<{ product: Product }> = ({ product }) => {
 // ─────────────────────────────────────────────
 const CategoryRow: FC<{ category: Category }> = ({ category }) => (
   <div className="w-full rounded-2xl py-5">
-    {/* Header */}
     <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
       <h2 className="text-lg font-bold text-gray-900">
-        {category.title}{" "}
-        <span className="font-normal text-gray-500 text-base">
-          ({category.subtitle})
-        </span>
+        {category.title} <span className="font-normal text-gray-500 text-base">({category.subtitle})</span>
       </h2>
       <Link
         href={category.seeAllHref}
@@ -761,14 +753,9 @@ const CategoryRow: FC<{ category: Category }> = ({ category }) => (
         See All Products
       </Link>
     </div>
-
-    {/* Scrollable product row */}
-    <div
-      className="flex gap-4 overflow-x-auto pb-1"
-      style={{ scrollbarWidth: "none" }}
-    >
-      {category.products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+    <div className="flex gap-4 overflow-x-auto pb-1 no-scrollbar" style={{ scrollbarWidth: "none" }}>
+      {category.products.map((product, idx) => (
+        <ProductCard key={product.id + idx} product={product} />
       ))}
     </div>
   </div>
@@ -790,16 +777,13 @@ const Banner: FC<{ banner: CollectionSection["banner"] }> = ({ banner }) => {
       />
     </div>
   );
-
   return banner.href ? <Link href={banner.href}>{inner}</Link> : inner;
 };
 
 // ─────────────────────────────────────────────
 // Single Section
 // ─────────────────────────────────────────────
-const CollectionSectionBlock: FC<{ section: CollectionSection }> = ({
-  section,
-}) => (
+const CollectionSectionBlock: FC<{ section: CollectionSection }> = ({ section }) => (
   <div className="flex flex-col gap-6">
     <Banner banner={section.banner} />
     {section.categories.map((category) => (
@@ -809,15 +793,9 @@ const CollectionSectionBlock: FC<{ section: CollectionSection }> = ({
 );
 
 // ─────────────────────────────────────────────
-// Root Component
+// Main Component
 // ─────────────────────────────────────────────
-interface ArabicCollectionPageProps {
-  data?: CollectionPageData;
-}
-
-const ArabicCollectionPage: FC<ArabicCollectionPageProps> = ({
-  data = RAW_DUMMY_DATA,
-}) => {
+const ArabicBanner: FC<{ data?: CollectionPageData }> = ({ data = RAW_DUMMY_DATA }) => {
   return (
     <div className="w-full max-w-8xl mx-auto flex flex-col gap-12 px-4 pb-16">
       {data.map((section, index) => (
@@ -827,4 +805,4 @@ const ArabicCollectionPage: FC<ArabicCollectionPageProps> = ({
   );
 };
 
-export default ArabicCollectionPage;
+export default ArabicBanner;

@@ -1,7 +1,13 @@
 {
+  "/(checkout)/checkout/page": "app/(checkout)/checkout/page.js",
   "/(public)/[page]/page": "app/(public)/[page]/page.js",
+  "/(public)/cart/page": "app/(public)/cart/page.js",
+  "/(public)/category/page": "app/(public)/category/page.js",
   "/(public)/page": "app/(public)/page.js",
+  "/(public)/product/[slug]/page": "app/(public)/product/[slug]/page.js",
+  "/(public)/productPage/page": "app/(public)/productPage/page.js",
   "/(public)/search/[collection]/page": "app/(public)/search/[collection]/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/productPage/page": "app/productPage/page.js"
 }

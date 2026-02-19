@@ -8,11 +8,11 @@ export interface Cart {
   shippingAmount: number;
   grandTotal: number;
   items: any;
-  paymentMethod : string ;
-  paymentMethodTitle : string ; 
-  shippingMethod : string ;
-  selectedShippingRate : string;
-  selectedShippingRateTitle : string;
+  paymentMethod: string;
+  paymentMethodTitle: string;
+  shippingMethod: string;
+  selectedShippingRate: string;
+  selectedShippingRateTitle: string;
 }
 export interface SelectedPayment {
   method: string;
@@ -33,6 +33,7 @@ interface CartState {
   selectedPayment: SelectedPayment | null;
   billingAddress: AddressDataTypes | null;
   shippingAddress: AddressDataTypes | null;
+  localItems: any[]; // For MVP
 }
 // Initial state for the cart
 const initialState: CartState = {
@@ -41,6 +42,7 @@ const initialState: CartState = {
   selectedPayment: null,
   billingAddress: null,
   shippingAddress: null,
+  localItems: [],
 };
 const cartSlice = createSlice({
   name: "cartDetail",
@@ -108,7 +110,26 @@ const cartSlice = createSlice({
       state.selectedPayment = null;
     },
 
-
+    pushItem: (state, action: PayloadAction<any>) => {
+      const existing = state.localItems.find(item => item.id === action.payload.id);
+      if (existing) {
+        existing.qty += action.payload.qty;
+      } else {
+        state.localItems.push(action.payload);
+      }
+    },
+    removeLocalItem: (state, action: PayloadAction<string | number>) => {
+      state.localItems = state.localItems.filter(item => item.id !== action.payload);
+    },
+    updateLocalQty: (state, action: PayloadAction<{ id: string | number; delta: number }>) => {
+      const item = state.localItems.find(i => i.id === action.payload.id);
+      if (item) {
+        item.qty = Math.max(1, item.qty + action.payload.delta);
+      }
+    },
+    clearLocalCart: (state) => {
+      state.localItems = [];
+    },
   },
 });
 
@@ -125,6 +146,10 @@ export const {
   setShippingAddress,
   clearShippingAddress,
   setCheckoutAddresses,
+  pushItem,
+  removeLocalItem,
+  updateLocalQty,
+  clearLocalCart,
 } = cartSlice.actions;
 
 // Export the reducer so the store can use it

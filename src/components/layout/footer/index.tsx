@@ -44,10 +44,10 @@ export default async function Footer() {
           <div className="mx-auto flex w-full max-w-screen-2xl flex-col justify-between gap-6 gap-y-6 px-6 py-12  min-[880px]:flex-row min-[880px]:gap-12 min-[880px]:gap-y-20 min-[880px]:px-4">
             {/* Column 1 */}
             <div className="flex flex-1 flex-col ">
-              <h1 className="font-medium" style={{ fontSize: "2.25rem" }}>
+              <h1 className="font-light" style={{ fontSize: "2.25rem" }}>
                 Sign Up To Our Newsletter.
               </h1>
-              <p className="text-base font-thin">
+              <p className="text-base font-thin opacity-50">
                 Be the first to hear about the latest offers.
               </p>
             </div>
@@ -57,7 +57,7 @@ export default async function Footer() {
               <Subscribe />
             </div>
           </div>
-          
+
           <div className="mx-auto flex w-full max-w-screen-2xl flex-col justify-between gap-6 gap-y-6 px-6 py-12 text-sm  min-[880px]:flex-row min-[880px]:gap-12 min-[880px]:gap-y-20 min-[880px]:px-4">
             {/* <div className="flex flex-col gap-[14px]">
               <Link
@@ -87,7 +87,7 @@ export default async function Footer() {
                 />
               </Suspense>
             </div> */}
-            <FooterMenu/>
+            <FooterMenu />
           </div>
           <div className="border-t border-white/60 py-6 text-sm">
             <div className="mx-auto flex w-full max-w-screen-2xl flex-col justify-center gap-1 px-4 md:flex-row">

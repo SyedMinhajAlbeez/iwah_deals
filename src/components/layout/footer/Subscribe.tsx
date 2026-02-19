@@ -68,7 +68,7 @@ const Subscribe = () => {
       <div className="mt-4 flex gap-x-3">
         <input
           type="email"
-          aria-label="Email Address"
+          aria-label="Your Email"
           {...register("email", {
             required: "Email is required",
             pattern: {

@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { Search, ShoppingCart, User, Globe, Menu, X } from 'lucide-react';
-import TopBar from './TopBar';
+import React, { useState } from "react";
+import Image from "next/image";
+import { Search, ShoppingCart, User, Globe, Menu, X } from "lucide-react";
+import TopBar from "./TopBar";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState("");
 
   const menuItems = [
-    { label: "Mens Fashion", href: "#" },
+    { label: "Mens Fashion", href: "/category" },
     { label: "Women's Fashion", href: "#" },
     { label: "Kid's Fashion", href: "#" },
     { label: "Gadgets", href: "#" },
     { label: "Home Appliances", href: "#" },
-    { label: "All Other Products", href: "#" },
+    { label: "All Other Products", href: "/productPage" },
   ];
 
   const handleSearch = (e: any) => {
@@ -30,9 +30,11 @@ export default function Navbar() {
       <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 w-full shadow-sm">
         <div className="px-4 xss:px-7.5 py-2.5 sm:py-3 md:py-3.5 lg:py-4 mx-auto w-full max-w-screen-2xl">
           <div className="flex items-center justify-between md:justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 flex-wrap">
-
             {/* Logo - Responsive sizing */}
-            <div className="flex-shrink-0">
+            <div
+              className="flex-shrink-0 cursor-pointer"
+              onClick={() => (window.location.href = "/")}
+            >
               <Image
                 src="/image/iwahDealIcon.png"
                 alt="Iwah Deals Logo"
@@ -143,7 +145,6 @@ export default function Navbar() {
           {/* Mobile Menu - Full responsive dropdown */}
           {isMobileMenuOpen && (
             <div className="md:hidden mt-3 py-4 border-t border-gray-200 bg-white shadow-lg rounded-b-lg">
-
               {/* Mobile Search Bar */}
               <div className="px-3 sm:px-4 mb-4">
                 <form onSubmit={handleSearch} className="relative">
