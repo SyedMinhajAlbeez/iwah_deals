@@ -3,23 +3,35 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+
   typescript: {
     ignoreBuildErrors: false,
   },
+
   images: {
-    unoptimized: true,
+    // Next Image Optimization ON (IMPORTANT)
+    formats: ["image/avif", "image/webp"],
+
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'iwahdeals.alisonstech-dev.com',
-        pathname: '/Cdn/public/**',
+        protocol: "https",
+        hostname: "iwahdeals.alisonstech-dev.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "admin.iwahdeals.com",
+        pathname: "/**",
       },
     ],
   },
+
   async headers() {
     return configHeader;
   },
+
   compress: true,
+
   experimental: {
     optimizePackageImports: ["lodash", "date-fns"],
     serverActions: {

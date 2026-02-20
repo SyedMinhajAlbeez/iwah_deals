@@ -706,7 +706,7 @@ export type OptionDataTypes = {
   column_2: ThemeOptions[];
   column_3: ThemeOptions[];
   services: {
-    service_icon: string;
+    serviceIcon: string;
     description: string;
     title: string;
   }[];

@@ -81,27 +81,39 @@ export default function ImageCarousel() {
             {/* Main Carousel */}
             <div
                 className="relative w-full rounded-2xl bg-gray-300 overflow-hidden group"
-                style={{ height: "500px" }}
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
             >
-                {/* Carousel Slides */}
-                {banners.map((banner, index) => (
-                    <div
-                        key={index}
-                        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ${
-                            currentIndex === index
-                                ? "opacity-100"
-                                : "opacity-0 pointer-events-none"
-                        }`}
-                    >
-                        {banner.link ? (
-                            <Link
-                                href={`/search/${banner.link}`}
-                                className="block w-full h-full"
-                            >
+                <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px]">
+                    {/* Carousel Slides */}
+                    {banners.map((banner, index) => (
+                        <div
+                            key={index}
+                            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ${
+                                currentIndex === index
+                                    ? "opacity-100"
+                                    : "opacity-0 pointer-events-none"
+                            }`}
+                        >
+                            {banner.link ? (
+                                <Link
+                                    href={`/search/${banner.link}`}
+                                    className="block w-full h-full"
+                                >
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={banner.src}
+                                            alt={banner.title}
+                                            fill
+                                            className="object-cover object-center"
+                                            priority={index === 0}
+                                            sizes="100vw"
+                                        />
+                                    </div>
+                                </Link>
+                            ) : (
                                 <div className="relative w-full h-full">
                                     <Image
                                         src={banner.src}
@@ -112,36 +124,25 @@ export default function ImageCarousel() {
                                         sizes="100vw"
                                     />
                                 </div>
-                            </Link>
-                        ) : (
-                            <div className="relative w-full h-full">
-                                <Image
-                                    src={banner.src}
-                                    alt={banner.title}
-                                    fill
-                                    className="object-cover object-center"
-                                    priority={index === 0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                        )}
-                    </div>
-                ))}
+                            )}
+                        </div>
+                    ))}
+                </div>
 
-                {/* Navigation Dots - Fixed at Bottom */}
+                {/* Navigation Dots - Fixed at Bottom, responsive paddings */}
                 {banners.length > 1 && (
-                    <div 
-                        className="absolute left-1/2 transform -translate-x-1/2 z-50 flex gap-2 bg-black/40 px-4 py-3 rounded-full backdrop-blur-sm pointer-events-auto"
-                        style={{ bottom: "32px" }}
+                    <div
+                        className="absolute left-1/2 transform -translate-x-1/2 z-50 flex gap-2 bg-black/40 px-2 py-2 sm:px-4 sm:py-3 rounded-full backdrop-blur-sm pointer-events-auto"
+                        style={{ bottom: "16px" }}
                     >
                         {banners.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => handleDotClick(index)}
-                                className={`transition-all duration-300 cursor-pointer h-2.5 rounded-full ${
+                                className={`transition-all duration-300 cursor-pointer h-2 w-2 sm:h-2.5 sm:rounded-full sm:w-2.5 rounded-full ${
                                     currentIndex === index
-                                        ? "w-8 bg-white"
-                                        : "w-2.5 bg-white/50 hover:bg-white/80"
+                                        ? "sm:w-8 w-6 bg-white"
+                                        : "sm:w-2.5 w-2 bg-white/50 hover:bg-white/80"
                                 }`}
                                 type="button"
                                 aria-label={`Go to slide ${index + 1}`}
@@ -151,10 +152,10 @@ export default function ImageCarousel() {
                 )}
             </div>
 
-            {/* Exclusive Deals Banner */}
+            {/* Exclusive Deals Banner - responsive height */}
             <Link href="/exclusive-deals" className="block w-full">
                 <div className="relative w-full rounded-3xl overflow-hidden group ">
-                    <div className="relative w-full" style={{ height: "194px", aspectRatio: "16 / 4" }}>
+                    <div className="relative w-full h-20 sm:h-32 md:h-40 lg:h-48 xl:h-[194px]" style={{ aspectRatio: "16 / 4" }}>
                         <Image
                             src="/image/webBanner7.gif"
                             alt="Exclusive Deals"

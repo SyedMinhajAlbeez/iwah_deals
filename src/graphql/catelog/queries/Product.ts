@@ -187,3 +187,53 @@ export const GET_RELATED_PRODUCTS = gql`
     }
   }
 `;
+
+/**
+ * Fetch all products using Bagisto allProducts endpoint
+ * Matches the Postman allProducts query structure
+ * @param first - Number of products to fetch (default 12)
+ */
+export const GET_ALL_PRODUCTS = gql`
+  query GetAllProducts {
+    allProducts(input: {}) {
+      data {
+        id
+        sku
+        type
+        parentId
+        attributeFamilyId
+        productNumber
+        name
+        shortDescription
+        description
+        urlKey
+        shareURL
+        status
+        guestCheckout
+        visibleIndividually
+        metaTitle
+        metaKeywords
+        metaDescription
+        price
+        specialPrice
+        specialPriceFrom
+        specialPriceTo
+        weight
+        createdAt
+        updatedAt
+        isInWishlist
+        isInSale
+        isSaleable
+        averageRating
+        percentageRating
+        images {
+          id
+          type
+          path
+          url
+          productId
+        }
+      }
+    }
+  }
+`;

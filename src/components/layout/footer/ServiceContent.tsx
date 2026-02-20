@@ -4,7 +4,6 @@ import { FC, useState, useRef } from "react";
 import Image from "next/image";
 import { OptionDataTypes } from "@/types/types";
 import { ThemeCustomizationTranslationNode } from "@/types/theme/theme-customization";
-import { usePathname } from "next/navigation";
 import { safeParse } from "@utils/helper";
 
 export interface ServiceContentDataTypes {
@@ -84,10 +83,10 @@ const StarRating: FC<{ rating: number }> = ({ rating }) => (
 const LeaveReviewButton: FC = () => (
   <button
     style={{
-      background: "linear-gradient(90deg, #034680 0%, #089BC7 100%)",
+      border: "linear-gradient(90deg, #034680 0%, #089BC7 100%)",
       padding: "9px 17px",
       borderRadius: "999px",
-      border: "none",
+      // border: "none",
       cursor: "pointer",
     }}
   >
@@ -109,8 +108,6 @@ const LeaveReviewButton: FC = () => (
 
 // ─── Review Card ───────────────────────────────────────────────────────────────
 
-// ─── Review Card ───────────────────────────────────────────────────────────────
-
 interface ReviewCardProps {
   review: Review;
   isActive: boolean;
@@ -124,41 +121,23 @@ const ReviewCard: FC<ReviewCardProps> = ({ review, isActive }) => {
         height: "243px",
         borderRadius: "16px",
         border: isActive ? "1.5px solid #C97B2A" : "1.5px solid #2a2a2a",
-        // background: "#0d0d0d",           // keep dark background (matches most references)
         display: "flex",
         alignItems: "stretch",
-        overflow: "hidden",              // ← important: image stays inside
+        overflow: "hidden",
         flexShrink: 0,
         transition: "border-color 0.4s ease",
       }}
     >
-      {/* Image container — full height, centered vertically */}
-      <div
-        style={{
-          width: "200px",
-          minWidth: "200px",
-          height: "243px",
-          position: "relative",
-          marginLeft: "24px",            // left gap like many examples
-          flexShrink: 0,
-        }}
-      >
+      <div style={{minWidth: "150px",height: "243px",position: "relative",marginLeft: "24px",flexShrink: 0,}}>
         <Image
           src={review.image}
           alt={review.name}
           fill
-          style={{
-            objectFit: "contain",
-            objectPosition: "center",    // centers the full outfit
-            borderRadius: "26px",
-            background: "#ffffff",       // white bg behind dress
-            opacity: 1,
-          }}
+          style={{objectFit: "cover",borderRadius: "26px",background: "#ffffff",opacity: 1,padding: "12px 12px 12px 12px",}}
           sizes="200px"
         />
       </div>
 
-      {/* Content Area */}
       <div
         style={{
           flex: 1,
@@ -181,7 +160,6 @@ const ReviewCard: FC<ReviewCardProps> = ({ review, isActive }) => {
               fontFamily: "Poppins, sans-serif",
               fontWeight: 700,
               fontSize: "20px",
-              // color: "#ffffff",            // white for dark bg
               lineHeight: "1.2",
             }}
           >
@@ -228,17 +206,17 @@ const ReviewsCarousel: FC = () => {
 
   return (
     <section
-      style={{
-        width: "100%",
-        paddingTop: "60px",
-        paddingBottom: "60px",
-        fontFamily: "Poppins, sans-serif",
-        overflow: "hidden",
-      }}
-    >
+  style={{
+    width: "60%",
+    margin: "0 auto",  // This centers the element horizontally
+    paddingTop: "60px",
+    paddingBottom: "60px",
+    fontFamily: "Poppins, sans-serif",
+    overflow: "hidden",
+  }}
+>
       <div style={{ textAlign: "center", marginBottom: "48px" }}>
-        <h2
-          style={{
+        <h2 style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 600,
             fontSize: "40px",
@@ -322,9 +300,135 @@ const ReviewsCarousel: FC = () => {
   );
 };
 
+// ─── Benefits Section ──────────────────────────────────────────────────────────
+
+const BenefitsSection: FC = () => {
+  const benefits = [
+    {
+      iconSrc: "/image/icons/bx_bx-support.png",
+      iconAlt: "Product Support Icon",
+      title: "Product Support",
+      description: "Up to 3 years on-site warranty available for your peace of mind.",
+    },
+    {
+      iconSrc: "/image/icons/Vectorrr.png",
+      iconAlt: "Personal Account Icon",
+      title: "Personal Account",
+      description: "With big discounts, free delivery and a dedicated support specialist.",
+    },
+    {
+      iconSrc: "/image/icons/Vector.png",
+      iconAlt: "Amazing Savings Icon",
+      title: "Amazing Savings",
+      description: "Up to 70% off new Products, you can be sure of the best price.",
+    },
+  ];
+
+  return (
+    <section
+      style={{
+        // background: "#0A9ACC",           // now visible
+        padding: "40px 20px 30px",
+        width: "100%",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "flex-start",
+          gap: "40px 60px",
+        }}
+      >
+        {benefits.map((item, idx) => (
+          <div
+            key={idx}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              textAlign: "center",
+              maxWidth: "280px",
+            }}
+          >
+            {/* Blue circle with centered icon */}
+            <div
+              style={{
+                width: "65px",
+                height: "65px",
+                background: "#0A9ACC",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: "16px",
+                position: "relative",
+              }}
+            >
+              <Image
+                src={item.iconSrc}
+                alt={item.iconAlt}
+                width={26}
+                height={26}
+                style={{
+                  objectFit: "contain",
+                }}
+                priority={false}
+              />
+            </div>
+
+            <h3
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: 600,
+                fontSize: "18px",
+                color: "#000000",
+                margin: "0 0 8px 0",
+                lineHeight: "1.2",
+              }}
+            >
+              {item.title}
+            </h3>
+
+            <p
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: 400,
+                fontSize: "13px",
+                color: "#000000",
+                margin: 0,
+                lineHeight: "1.45",
+                maxWidth: "260px",
+              }}
+            >
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Visible purple bottom line */}
+      <div
+        style={{
+          height: "2px",
+          // background: "#7C3AED",          // purple/violet as in reference
+          maxWidth: "1000px",
+          margin: "30px auto 0",
+        }}
+      />
+    </section>
+  );
+};
+
 // ─── Service Content ──────────────────────────────────────────────────────────
 
 const ServiceContent: FC<ServiceContentDataTypes> = ({ serviceData }) => {
+  // For quick debug: force render regardless of serviceData
+  // return <ServiceCarouselRender />;
+
   if (!serviceData?.length) {
     return <ServiceCarouselRender />;
   }
@@ -342,28 +446,19 @@ const ServiceContent: FC<ServiceContentDataTypes> = ({ serviceData }) => {
 const ServiceCarouselRender: FC<ServiceContenRenderTypes> = ({
   serviceList: _serviceList,
 }) => {
-  const pathname = usePathname();
-
-  if (
-    pathname === "/customer/login" ||
-    pathname === "/customer/register" ||
-    pathname === "/customer/forget-password"
-  ) {
-    return null;
-  }
-
   const partners = Array.from({ length: 7 }, (_, idx) => ({
     src: `/image/partners/partner${idx + 1}.png`,
     alt: `Partner ${idx + 1}`,
   }));
 
+
   return (
-    <div className="flex flex-col gap-10">
-      <section className="w-full rounded-2xl px-6 py-10">
-        <h2 className="mx-auto flex h-[60px] w-[248px] items-center justify-center text-center font-['Poppins'] text-[40px] font-semibold leading-[40px] text-white">
+    <div className="bg-white">
+      <section className="w-full rounded-2xl px-6">
+        <h2 className="mx-auto flex h-[60px] w-[248px] items-center justify-center text-center font-['Poppins'] text-[40px] font-semibold leading-[40px] text-gray-900">
           Partner with
         </h2>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+        <div className="mt-8 flex flex-wrap grayscale hover:grayscale-0 items-center justify-center gap-6">
           {partners.map((partner) => (
             <Image
               key={partner.src}
@@ -371,14 +466,34 @@ const ServiceCarouselRender: FC<ServiceContenRenderTypes> = ({
               alt={partner.alt}
               width={153}
               height={79}
-              className="h-[79px] w-[153px] object-contain"
+              className="h-[79px] w-[153px] object-contain grayscale hover:grayscale-0"
               loading="lazy"
             />
           ))}
         </div>
       </section>
+      {/* <section className="w-full rounded-2xl px-6">
+  <h2 className="mx-auto flex h-[60px] w-[248px] items-center justify-center text-center font-['Poppins'] text-[40px] font-semibold leading-[40px] text-gray-900">
+    Partner with
+  </h2>
+  <div className="mt-8 flex flex-wrap justify-between items-center grayscale hover:grayscale-0">
+    {partners.map((partner) => (
+      <Image
+        key={partner.src}
+        src={partner.src}
+        alt={partner.alt}
+        width={153}
+        height={79}
+        className="h-[79px] w-[calc(14.285%-10px)] object-contain grayscale hover:grayscale-0"
+        loading="lazy"
+      />
+    ))}
+  </div>
+</section> */}
 
       <ReviewsCarousel />
+
+      <BenefitsSection />
     </div>
   );
 };

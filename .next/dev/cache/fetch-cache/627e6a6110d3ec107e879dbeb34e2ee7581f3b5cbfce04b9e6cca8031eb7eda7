@@ -1,1 +1,0 @@
-{"kind":"FETCH","data":{"headers":{},"body":"{\"attribute\":{\"__typename\":\"Attribute\",\"id\":\"/Cdn/public/api/admin/attributes/25\",\"code\":\"brand\",\"options\":{\"__typename\":\"AttributeOptionCursorConnection\",\"edges\":[]}}}","status":200,"url":""},"revalidate":31536000,"tags":[]}

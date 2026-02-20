@@ -86,7 +86,7 @@ const Subscribe = () => {
         />
         <Button
           className={clsx(
-            "relative flex font-medium w-full min-w-32 max-w-32 items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-2.5 text-white text-[15px] tracking-wide hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+            "relative flex font-medium w-full min-w-32 max-w-32 items-center justify-center rounded-full border border-transparent bg-blue-600 px-5 py-2.5 text-white text-[15px] tracking-wide hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
             {
               "opacity-50 cursor-not-allowed": isSubmitting || loading,
             }

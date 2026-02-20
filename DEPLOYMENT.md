@@ -174,7 +174,7 @@ sudo systemctl restart nginx
 ---
 
 **Current Configuration:**
-- Backend: `https://iwahdeals.alisonstech-dev.com/Cdn/public`
+- Backend: `https://admin.iwahdeals.com/public/graphql`
 - Storefront Key: Pre-configured
 - Port: 3000 (internal)
 - Process Manager: PM2 (cluster mode)

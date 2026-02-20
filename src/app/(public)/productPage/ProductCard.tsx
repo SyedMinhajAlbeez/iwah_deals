@@ -3,37 +3,26 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Heart } from 'lucide-react';
 
-interface ProductCardProps {
+import Link from 'next/link';
+
+export interface ProductCardProps {
   product: {
     id: string;
     name: string;
     price: number;
-    originalPrice?: number;
-    description: string;
-    imageUrl: string;
-    image?: string;
-    category: string;
-    catalogNumber: string;
-    catalog?: string;
+    originalPrice: number;
+    image: string;
     rating: number;
-    reviewCount: number;
-    reviews?: number;
+    reviews: number;
     badge?: string;
-    color: string;
+    catalog: string;
+    urlKey: string;
+    isInWishlist: boolean;
   };
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
-  const [isLiked, setIsLiked] = useState(false);
-
-  // Use appropriate image field
-  const imageSrc = product.imageUrl || product.image || '';
-
-  // Format catalog display
-  const catalogDisplay = product.catalog || `${product.catalogNumber} - CATALOG`;
-
-  // Use appropriate review count
-  const reviewCount = product.reviewCount || product.reviews || 0;
+  const [isLiked, setIsLiked] = useState(product.isInWishlist);
 
   const renderStars = (rating: number) => {
     return (
@@ -41,7 +30,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {[1, 2, 3, 4, 5].map((star) => (
           <svg
             key={star}
-            className={`w-3 h-3 ${star <= rating ? "fill-yellow-400" : "fill-gray-300"}`}
+            className={`w-3 h-3 ${star <= rating ? "fill-[#FFA522]" : "fill-gray-200"}`}
             viewBox="0 0 20 20"
           >
             <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
@@ -52,69 +41,78 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+    <div className="group bg-white rounded-2xl md:rounded-[2rem] overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
       {/* Product Image */}
-      <div className="relative aspect-[3/4] bg-gray-100">
+      <Link href={`/productPage/${product.urlKey}`} className="block relative aspect-square m-3 rounded-2xl overflow-hidden bg-gray-50 uppercase">
         <Image
-          src={imageSrc}
+          src={product.image}
           alt={product.name}
           fill
           unoptimized
-          className="object-cover"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 50vw, 25vw"
         />
 
         {/* Heart Icon */}
         <button
-          onClick={() => setIsLiked(!isLiked)}
-          className="absolute top-3 left-3 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center hover:scale-110 transition-transform z-10"
+          onClick={(e) => {
+            e.preventDefault();
+            setIsLiked(!isLiked);
+          }}
+          className="absolute top-3 left-3 w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center hover:scale-110 transition-transform z-10"
           aria-label="Add to favorites"
         >
-          <Heart
-            className={`w-4 h-4 ${
-              isLiked ? "fill-red-500 text-red-500" : "text-gray-600"
-            }`}
-          />
+          <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center overflow-hidden">
+            <Heart
+              className={`w-3.5 h-3.5 ${isLiked ? "fill-[#FF2E2E] text-[#FF2E2E]" : "text-gray-400"
+                }`}
+            />
+          </div>
         </button>
 
         {/* Badge */}
-        {/* {product.badge && (
-          <div className="absolute top-3 right-3 bg-[#0093D0] text-white text-xs font-semibold px-3 py-1 rounded-full">
+        {product.badge && (
+          <div className="absolute top-3 right-3 bg-[#0093D0] text-white text-[10px] font-bold px-3 py-1 rounded-full px-4">
             {product.badge}
           </div>
-        )} */}
-      </div>
+        )}
+      </Link>
 
       {/* Product Info */}
-      <div className="p-4">
+      <div className="p-4 flex flex-col flex-grow">
         {/* Rating & Reviews */}
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex items-center gap-2 mb-3">
           {renderStars(product.rating)}
-          <span className="text-xs text-gray-500">
-            Reviews ({reviewCount})
+          <span className="text-[10px] text-gray-400 font-medium">
+            Reviews ({product.reviews})
           </span>
         </div>
 
         {/* Product Name */}
-        <h3 className="text-sm font-bold text-gray-900 mb-1 line-clamp-2 min-h-[40px]">
+        <h3 className="text-sm font-bold text-[#111111] leading-tight line-clamp-2 uppercase min-h-[2.5rem] mb-1">
           {product.name}
         </h3>
 
         {/* Catalog */}
-        <p className="text-xs text-gray-500 mb-3">
-          ( {catalogDisplay} )
+        <p className="text-[10px] text-gray-400 font-medium mb-3">
+          ( {product.catalog} )
         </p>
 
         {/* Price */}
-        <div className="flex items-center gap-2">
-          {product.originalPrice && (
-            <span className="text-xs text-gray-400 line-through">
-              {product.originalPrice.toFixed(2)}
+        <div className="mt-auto">
+          <div className="flex flex-col">
+            {/* {product.originalPrice > product.price && (
+              <span className="text-xs text-gray-400 line-through font-medium">
+                BHD{product.originalPrice.toFixed(2)}
+              </span>
+            )} */}
+            <span className="text-[11px] text-gray-400 line-through leading-none">
+              BHD {(product.originalPrice || product.price).toFixed(2)}
             </span>
-          )}
-          <span className="text-lg font-bold text-gray-900">
-            {product.price.toFixed(2)}
-          </span>
+            <span className="text-lg font-extrabold text-[#111111]">
+              BHD {product.price.toFixed(2)}
+            </span>
+          </div>
         </div>
       </div>
     </div>

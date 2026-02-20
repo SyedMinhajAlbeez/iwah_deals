@@ -1,12 +1,9 @@
 export interface ThemeTranslationNode {
   id: string;
   themeCustomizationId: string;
-  locale: string;
-  options: string;
-}
-
-export interface ThemeTranslationEdge {
-  node: ThemeTranslationNode;
+  locale?: string;
+  localeCode?: string;
+  options: string | Record<string, any>;
 }
 
 export interface ThemeCustomizationNode {
@@ -16,17 +13,11 @@ export interface ThemeCustomizationNode {
   status: string;
   sortOrder: number;
   themeCode?: string;
-  translations: {
-    edges: ThemeTranslationEdge[];
-  };
+  translations: ThemeTranslationNode[];
 }
 
 export interface ThemeCustomizationResponse {
-  themeCustomizations: {
-    edges: {
-      node: ThemeCustomizationNode;
-    }[];
-  };
+  themeCustomization: ThemeCustomizationNode[];
 }
 
 
@@ -42,18 +33,11 @@ export interface FooterColumns {
   column_3?: ThemeOptions[];
 }
 export interface GetFooterResponse {
-  themeCustomizations: ThemeCustomizationConnection;
+  themeCustomization: ThemeCustomizationFooterNode[];
 }
 
 export interface GetFooterVariables {
   type?: string;
-}
-export interface ThemeCustomizationConnection {
-  edges: ThemeCustomizationEdge[];
-}
-
-export interface ThemeCustomizationEdge {
-  node: ThemeCustomizationFooterNode;
 }
 
 export interface ThemeCustomizationFooterNode {
@@ -62,10 +46,7 @@ export interface ThemeCustomizationFooterNode {
   name: string;
   status: boolean;
   themeCode?: string;
-  translations: ThemeCustomizationTranslationConnection;
-}
-export interface ThemeCustomizationTranslationConnection {
-  edges: ThemeCustomizationTranslationEdge[];
+  translations: ThemeCustomizationTranslationNode[];
 }
 
 export interface ThemeCustomizationTranslationNode {
@@ -76,15 +57,11 @@ export interface ThemeCustomizationTranslationNode {
 }
 
 
-export interface ThemeCustomizationTranslationEdge {
-  node: ThemeCustomizationTranslationNode;
-}
 export interface FooterMenuProps {
-  menu: ThemeCustomizationEdge[];
+  menu: ThemeCustomizationFooterNode[];
 }
 
 export interface ThemeCustomizationResult {
   footer_links: GetFooterResponse | null;
   services_content: GetFooterResponse | null;
 }
-

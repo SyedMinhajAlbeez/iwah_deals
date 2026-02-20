@@ -1,6 +1,6 @@
 {
   "node": {
-    "604b8c396002ec61559debc025e916db530f731ae1": {
+    "60901f75c8ecea50e23f66d8fb96a1149f5b392e61": {
       "workers": {
         "app/(public)/[page]/page": {
           "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/[page]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",

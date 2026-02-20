@@ -1,0 +1,2 @@
+﻿src/components/checkout/checkout-cart/CheckoutCart.tsx(109,17): error TS2322: Type 'number' is not assignable to type 'string'.
+src/components/checkout/checkout-cart/CheckoutCart.tsx(124,13): error TS2322: Type 'number' is not assignable to type 'string'.

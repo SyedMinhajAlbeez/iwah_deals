@@ -773,7 +773,7 @@ const Banner: FC<{ banner: CollectionSection["banner"] }> = ({ banner }) => {
         width={1399}
         height={361}
         className="w-full h-auto min-h-[180px] md:min-h-[300px] object-cover"
-        loading="lazy"
+        loading="eager"
       />
     </div>
   );

@@ -84,6 +84,7 @@ export default async function ProductPage({
     sku: product?.sku,
   };
 
+
   const reviews = Array.isArray(product?.reviews?.edges)
     ? product?.reviews.edges.map((e) => e.node)
     : [];

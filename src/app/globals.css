@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
   /* Font families */
   font-family: var(--font-outfit), system-ui, sans-serif;
   --background: #ffffff;
-  --foreground: #000;
+  --foreground: #111827;
   --color-selected-black: #00000099;
 
 
@@ -92,9 +92,19 @@ body::-webkit-scrollbar-thumb {
   --screen-1366: 1366px;
 }
 
+html.light {
+  --background: #ffffff !important;
+  --foreground: #111827 !important;
+}
+
+html.dark {
+  --background: #171717 !important;
+  --foreground: #ffffff !important;
+}
+
 .dark {
-  --background: #171717;
-  --foreground: #ffffff;
+  --background: #171717 !important;
+  --foreground: #ffffff !important;
 
   --hero-background: #171717;
   --hero-foreground: #ffffff;

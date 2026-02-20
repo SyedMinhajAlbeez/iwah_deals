@@ -54,28 +54,28 @@ const Email = () => {
         </form>
       ) : (
         <>
-          <div className="mt-4  justify-between hidden sm:flex">
-            <div className="flex">
-              <p className="w-auto text-base font-normal text-black/60 dark:text-white/60 sm:w-[192px]">
+           <div className="mt-4  justify-between hidden sm:flex">
+             <div className="flex">
+              <p className="w-auto text-base font-normal text-neutral-700 dark:text-neutral-300 sm:w-[192px]">
                 Email Address
               </p>
-              <p className="font-normal block text-base text-black/60 dark:text-white/60">{email}</p>
-            </div>
-            <button
+              <p className="block text-base font-normal text-neutral-800 dark:text-neutral-200">{email}</p>
+             </div>
+             <button
               onClick={() => setIsOpen(!isOpen)}
               className="cursor-pointer text-base font-normal text-black/[60%] underline dark:text-neutral-300"
             >
               Change
             </button>
           </div>
-          <div className=" relative mt-4 flex sm:hidden flex-col justify-end gap-y-2 sm:flex-row sm:justify-between sm:gap-y-0">
-            <div className="flex justify-between  flex-1 flex-wrap">
-              <p className="w-auto text-base font-normal text-black/60 dark:text-white/60 sm:w-[192px]">
+           <div className=" relative mt-4 flex sm:hidden flex-col justify-end gap-y-2 sm:flex-row sm:justify-between sm:gap-y-0">
+             <div className="flex justify-between  flex-1 flex-wrap">
+              <p className="w-auto text-base font-normal text-neutral-700 dark:text-neutral-300 sm:w-[192px]">
                 Email Address
               </p>
-              <p className="font-normal block text-base text-black/60 dark:text-white/60">{email}</p>
-            </div>
-            <button
+              <p className="block text-base font-normal text-neutral-800 dark:text-neutral-200">{email}</p>
+             </div>
+             <button
               onClick={() => setIsOpen(!isOpen)}
               className="cursor-pointer absolute right-0  text-base font-normal text-black/[60%] underline dark:text-neutral-300"
               style={{ top: "-36px" }}
@@ -117,7 +117,7 @@ function EmailForm({
       />
 
       {isGuest && (
-        <p className="mb-4 mt-6 font-outfit text-base font-normal text-black/[60%] dark:text-neutral-300">
+        <p className="mb-4 mt-6 font-outfit text-base font-normal text-neutral-700 dark:text-neutral-300">
           Already have an account? No worries, just{" "}
           <br className="block sm:hidden" />
           <Link

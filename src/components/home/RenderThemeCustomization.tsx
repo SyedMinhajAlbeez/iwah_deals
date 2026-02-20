@@ -8,34 +8,35 @@ import BestSellingProducts from "./BestSellingProducts";
 import ArabicBanner from "./ArabicBanner";
 
 interface RenderThemeCustomizationProps {
-  themeCustomizations: ThemeCustomizationResponse["themeCustomizations"];
+  themeCustomizations: ThemeCustomizationResponse["themeCustomization"];
 }
 
 const RenderThemeCustomization: FC<RenderThemeCustomizationProps> = ({
   themeCustomizations,
 }) => {
-  if (!themeCustomizations?.edges?.length) return null;
+  if (!themeCustomizations || themeCustomizations.length === 0) return null;
 
-  const sortedEdges = [...themeCustomizations.edges].sort(
-    (a, b) => (a.node.sortOrder || 0) - (b.node.sortOrder || 0),
+  const sortedCustomizations = [...themeCustomizations].sort(
+    (a, b) => (a.sortOrder || 0) - (b.sortOrder || 0),
   );
 
   const firstStaticContentId =
-    sortedEdges.find(({ node }) => node.type === "static_content")?.node.id ??
+    sortedCustomizations.find((node) => node.type === "static_content")?.id ??
     null;
 
   return (
     <>
       <MobileSearchBar />
       <section className="w-full max-w-screen-2xl mx-auto pb-4 px-4 xss:px-7.5">
-        {sortedEdges.map(({ node }) => {
-       console.log("chekcnewww",node)
+        {sortedCustomizations.map((node) => {
           const translation =
-            node.translations.edges.find((e) => e.node.locale === "en") ||
-            node.translations.edges[0];
+            node.translations.find((t) => (t.locale || t.localeCode) === "en") ||
+            node.translations[0];
           if (!translation) return null;
 
-          const options = safeParse(translation.node.options) || {};
+          const options = typeof translation.options === 'string' 
+            ? safeParse(translation.options) || {}
+            : translation.options || {};
           if (Object.keys(options).length === 0) return null;
 
           switch (node.type) {

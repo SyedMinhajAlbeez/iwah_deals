@@ -33,5 +33,6 @@ export const ProductClient: FC<ProductClientProps> = ({ slug, fallbackProduct })
         }
     }, [slug]);
 
+
     return <ProductDetailView product={product} />;
 };

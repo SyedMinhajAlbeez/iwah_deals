@@ -117,37 +117,37 @@ export default function CartItemAccordion({
                 );
               })}
             </ul>
-            <div className="py-4 text-sm text-neutral-500 dark:text-neutral-400">
+            <div className="py-4 text-sm text-neutral-700 dark:text-neutral-300">
               <div className="mb-3 flex items-center justify-between pb-1">
-                <p className="text-black[60%] font-outfit text-base font-normal dark:text-white">
+                <p className="font-outfit text-base font-normal text-neutral-700 dark:text-neutral-300">
                   Subtotal
                 </p>
                 <Price
-                  className="text-right text-base text-black dark:text-white"
+                  className="text-right text-base text-neutral-900 dark:text-neutral-100"
                   amount={cartItems?.subtotal || "0"}
                   currencyCode={"USD"}
                 />
               </div>
               <div className="mb-3 flex items-center justify-between pb-1 pt-1">
-                <p className="text-black[60%] font-outfit text-base font-normal dark:text-white">
+                <p className="font-outfit text-base font-normal text-neutral-700 dark:text-neutral-300">
                   Shipping
                 </p>
                 {cartItems?.shippingAmount ? (
                   <Price
                     amount={cartItems?.shippingAmount || "0"}
-                    className="text-right text-base text-black dark:text-white"
+                    className="text-right text-base text-neutral-900 dark:text-neutral-100"
                     currencyCode={"USD"}
                   />
                 ) : (
-                  <p className="text-right text-base">
+                  <p className="text-right text-base text-neutral-700 dark:text-neutral-300">
                     Calculated at Next Step
                   </p>
                 )}
               </div>
               <div className="mb-3 flex items-center justify-between pb-1 pt-1">
-                <p className="text-xl font-bold dark:text-white">Total</p>
+                <p className="text-xl font-bold text-neutral-900 dark:text-neutral-100">Total</p>
                 <Price
-                  className="text-right text-base text-black dark:text-white"
+                  className="text-right text-base text-neutral-900 dark:text-neutral-100"
                   amount={cartItems?.grandTotal || "0"}
                   currencyCode={"USD"}
                 />

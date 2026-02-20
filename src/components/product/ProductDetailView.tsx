@@ -40,6 +40,9 @@ export const ProductDetailView: FC<ProductDetailViewProps> = ({ product }) => {
     const router = useRouter();
     const { showToast } = useCustomToast();
 
+
+    console.log("profffffffffffffduct",product)
+
     const handleAddToCart = () => {
         dispatch(pushItem({
             id: product.id,
@@ -60,7 +63,7 @@ export const ProductDetailView: FC<ProductDetailViewProps> = ({ product }) => {
             qty: quantity,
             image: product.image
         }));
-        router.push("/checkout");
+        // router.push("/checkout");
     };
 
     return (

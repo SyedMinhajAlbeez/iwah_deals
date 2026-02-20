@@ -133,8 +133,8 @@ export default function Stepper(
               {step.id}
             </div>
             <span
-              className={`text-lg font-medium max-md:text-base ${isActive
-                ? "font-medium text-neutral-900 dark:text-neutral-300"
+                className={`text-lg font-medium max-md:text-base ${isActive
+                ? "font-medium text-neutral-900 dark:text-neutral-100"
                 : "text-neutral-900 dark:text-white"
                 }`}
             >
@@ -158,7 +158,9 @@ export default function Stepper(
         >
           <LogoIcon />
         </Link>
-        <h1 className="text-xl px-2 font-semibold block lg:hidden">Checkout</h1>
+        <h1 className="block px-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100 lg:hidden">
+          Checkout
+        </h1>
       </header>
 
       <div className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-500 dark:scrollbar-thumb-neutral-300 h-[calc(100dvh-300px)] overflow-y-auto lg:h-[calc(100dvh-124px)]">

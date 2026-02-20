@@ -7,6 +7,9 @@ export default function initializeApollo() {
   const ssrMode = typeof window === "undefined";
   const cache = new InMemoryCache();
 
+  // On the server: hit the external API directly.
+  // On the client: User requested direct hit (bypassing proxy). 
+  // WARNING: This may cause CORS errors if server doesn't allow localhost.
   const httpLink = new HttpLink({
     uri: GRAPHQL_URL,
     credentials: "include",

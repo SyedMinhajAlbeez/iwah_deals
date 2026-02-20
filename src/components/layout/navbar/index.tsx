@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Search, ShoppingCart, User, Globe, Menu, X } from "lucide-react";
 import TopBar from "./TopBar";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,31 +32,28 @@ export default function Navbar() {
         <div className="px-4 xss:px-7.5 py-2.5 sm:py-3 md:py-3.5 lg:py-4 mx-auto w-full max-w-screen-2xl">
           <div className="flex items-center justify-between md:justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 flex-wrap">
             {/* Logo - Responsive sizing */}
-            <div
-              className="flex-shrink-0 cursor-pointer"
-              onClick={() => (window.location.href = "/")}
-            >
+            <Link href="/" className="flex-shrink-0">
               <Image
                 src="/image/iwahDealIcon.png"
                 alt="Iwah Deals Logo"
                 width={77}
                 height={70}
                 priority
-                className="w-auto h-9 sm:h-10 md:h-11 lg:h-12 xl:h-13 2xl:h-14"
+                className="w-auto h-9 sm:h-10 md:h-11 lg:h-12 xl:h-13 2xl:h-14 cursor-pointer"
               />
-            </div>
+            </Link>
 
             {/* Desktop Menu + Our Deals - Hidden on tablet and below */}
             <div className="hidden lg:flex items-center gap-3 xl:gap-4 flex-shrink-0">
               <ul className="flex items-center gap-3 xl:gap-4 list-none m-0 p-0">
                 {menuItems.map((item, idx) => (
                   <li key={idx}>
-                    <a
+                    <Link
                       href={item.href}
                       className="relative pb-1 border-b-2 border-transparent text-sm font-medium text-gray-800 whitespace-nowrap transition-all duration-200 hover:border-b-[#089BC7] hover:text-[#089BC7] active:text-[#033F7A]"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -170,13 +168,13 @@ export default function Navbar() {
               <ul className="flex flex-col px-1 sm:px-2 space-y-1">
                 {menuItems.map((item, idx) => (
                   <li key={idx}>
-                    <a
+                    <Link
                       href={item.href}
                       className="block px-4 sm:px-5 py-3 text-sm sm:text-base font-medium text-gray-800 rounded-lg transition-colors duration-200 hover:bg-gray-100 hover:text-[#089BC7] active:bg-gray-200"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
