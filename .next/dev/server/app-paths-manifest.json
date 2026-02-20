@@ -1,4 +1,5 @@
 {
+  "/(public)/[page]/page": "app/(public)/[page]/page.js",
   "/(public)/cart/page": "app/(public)/cart/page.js",
   "/(public)/checkout/page": "app/(public)/checkout/page.js",
   "/(public)/page": "app/(public)/page.js",

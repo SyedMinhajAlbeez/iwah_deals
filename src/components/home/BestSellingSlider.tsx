@@ -110,7 +110,7 @@ const BestSellingSlider: FC<BestSellingSliderProps> = ({ products }) => {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6 md:mb-8">
                     <h2 className="text-xl md:text-3xl font-bold text-[#111111] tracking-tight">
-                        Best Selling Products
+                        Best Selling Products.
                     </h2>
                     <Link
                         href="/products"
