@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
   removeLocalItem,
@@ -85,11 +86,13 @@ export default function ShoppingCart() {
                   >
                     {/* Item info */}
                     <div className="flex items-center gap-4">
-                      <div className="w-[90px] h-[90px] rounded-lg overflow-hidden flex-shrink-0 bg-gray-100">
-                        <img
+                      <div className="w-[90px] h-[90px] rounded-lg overflow-hidden flex-shrink-0 bg-gray-100 relative">
+                        <Image
                           src={item.image}
                           alt={item.name}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
+                          sizes="90px"
                         />
                       </div>
                       <p className="text-sm text-gray-800 leading-snug max-w-xs">

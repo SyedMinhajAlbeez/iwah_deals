@@ -182,11 +182,11 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
         <p className="text-sm text-gray-600 mb-2">{product.color}</p>
         <div className="mb-2">
           <span className="text-lg font-bold text-gray-900 mr-2">
-            ${product.price.toFixed(2)}
+            BHD{product.price.toFixed(2)}
           </span>
           {product.originalPrice && product.originalPrice > product.price && (
             <span className="text-sm text-gray-400 line-through">
-              ${product.originalPrice.toFixed(2)}
+              BHD{product.originalPrice.toFixed(2)}
             </span>
           )}
         </div>

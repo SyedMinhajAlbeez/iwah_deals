@@ -14,7 +14,7 @@ export default function Navbar() {
     { label: "Mens Fashion", href: "/category" },
     { label: "Women's Fashion", href: "#" },
     { label: "Kid's Fashion", href: "#" },
-    { label: "Gadgets", href: "#" },
+    { label: "Gadgets", href: "/gadgetCategory" },
     { label: "Home Appliances", href: "#" },
     { label: "All Other Products", href: "/productPage" },
   ];

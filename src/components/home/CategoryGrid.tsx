@@ -238,15 +238,15 @@ const CategoryGrid: FC = () => {
             
 
              <div className="group flex flex-col items-center w-[calc(50%-4px)] sm:w-[calc(33.333%-16px)] md:w-auto transition-transform duration-200 active:scale-95">
-              <Link href="/search/mens-fashion" style={{margin: "68px 30px",}} className="flex flex-col items-center">
+              <Link href="/search/mens-fashion" style={{ margin: "68px 30px" }} className="flex flex-col items-center">
                 <div className="relative overflow-visible h-24 sm:h-28 md:h-32 lg:h-36 w-full flex items-end justify-center mb-1">
-                  <div 
+                  <div
                     className="absolute bottom-0 h-16 sm:h-20 md:h-24 lg:h-28 w-full max-w-35 sm:max-w-40 md:max-w-42.5 rounded-[20px] sm:rounded-3xl lg:rounded-[28px] shadow-lg"
                     style={{
                       width: "195px",
                       height: "170px",
                       background: "radial-gradient(87.5% 87.5% at 50% 50%, #FFFFFF 8.24%, #0899CB 53.3%, #0C98B6 100%)",
-                      margin: "17px 40px 0 40px"
+                      margin: "17px 40px 0 40px",
                     }}
                   />
                   <div className="relative z-10 w-full h-full flex items-center justify-center overflow-visible">
@@ -255,15 +255,12 @@ const CategoryGrid: FC = () => {
                       alt="Women's Fashion"
                       width={128}
                       height={128}
-                      style={{height: "min(328px, 35vw)", paddingBottom: '69px' }}
+                      style={{ height: "min(328px, 35vw)", paddingBottom: "69px" }}
                       priority
-                      className="object-contain transition-transform duration-200 group-hover:scale-110 drop-shadow-sm
-                      h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
+                      className="object-contain transition-transform duration-200 group-hover:scale-110 drop-shadow-sm h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
                       sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
                     />
-                    
                   </div>
-                  
                 </div>
                 <span className="max-w-[110px] text-center text-xs sm:text-sm lg:text-base font-bold leading-tight text-[#8B1D1D] hover:text-[#6B1515] mt-2">
                   Men&apos;s Fashion
@@ -273,15 +270,15 @@ const CategoryGrid: FC = () => {
 
             {/* Women's Fashion */}
             <div className="group flex flex-col items-center w-[calc(50%-4px)] sm:w-[calc(33.333%-16px)] md:w-auto transition-transform duration-200 active:scale-95">
-              <Link href="/search/womens-fashion" style={{margin: "68px 15px",}} className="flex flex-col items-center">
+              <Link href="/search/womens-fashion" style={{ margin: "68px 15px" }} className="flex flex-col items-center">
                 <div className="relative overflow-visible h-24 sm:h-28 md:h-32 lg:h-36 w-full flex items-end justify-center mb-1">
-                  <div 
+                  <div
                     className="absolute bottom-0 h-16 sm:h-20 md:h-24 lg:h-28 w-full max-w-35 sm:max-w-40 md:max-w-42.5 rounded-[20px] sm:rounded-3xl lg:rounded-[28px] shadow-lg"
                     style={{
                       width: "195px",
                       height: "170px",
                       background: "radial-gradient(87.5% 87.5% at 50% 50%, #FFFFFF 8.24%, #0899CB 53.3%, #0C98B6 100%)",
-                      margin: "17px 40px 0 40px"
+                      margin: "17px 40px 0 40px",
                     }}
                   />
                   <div className="relative z-10 w-full h-full flex items-center justify-center overflow-visible">
@@ -290,10 +287,9 @@ const CategoryGrid: FC = () => {
                       alt="Women's Fashion"
                       width={128}
                       height={128}
-                      style={{height: "283px", paddingBottom: '69px' }}
+                      style={{ height: "283px", paddingBottom: "69px" }}
                       priority
-                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm
-                      h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
+                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
                       sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
                     />
                     
@@ -337,15 +333,15 @@ const CategoryGrid: FC = () => {
               </Link>
             </div> */}
             <div className="group flex flex-col items-center w-[calc(50%-4px)] sm:w-[calc(33.333%-16px)] md:w-auto transition-transform duration-200 active:scale-95">
-              <Link href="/search/gadgets" style={{margin: "68px 5px",}} className="flex flex-col items-center">
+              <Link href="/search/gadgets" style={{ margin: "68px 5px" }} className="flex flex-col items-center">
                 <div className="relative overflow-visible h-24 sm:h-28 md:h-32 lg:h-36 w-full flex items-end justify-center mb-1">
-                  <div 
+                  <div
                     className="absolute bottom-0 h-16 sm:h-20 md:h-24 lg:h-28 w-full max-w-35 sm:max-w-40 md:max-w-42.5 rounded-[20px] sm:rounded-3xl lg:rounded-[28px] shadow-lg"
                     style={{
                       width: "195px",
                       height: "170px",
                       background: "radial-gradient(87.5% 87.5% at 50% 50%, #FFFFFF 8.24%, #0899CB 53.3%, #0C98B6 100%)",
-                      margin: "17px 40px 0 40px"
+                      margin: "17px 40px 0 40px",
                     }}
                   />
                   <div className="relative z-10 w-full h-full flex items-center justify-center overflow-visible">
@@ -354,10 +350,9 @@ const CategoryGrid: FC = () => {
                       alt="Women's Fashion"
                       width={128}
                       height={128}
-                      style={{height: "283px", paddingBottom: '69px' }}
+                      style={{ height: "283px", paddingBottom: "69px" }}
                       priority
-                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm
-                      h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
+                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
                       sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
                     />
                     
@@ -371,27 +366,26 @@ const CategoryGrid: FC = () => {
 
             {/* Home Appliances */}
             <div className="group flex flex-col items-center w-[calc(50%-4px)] sm:w-[calc(33.333%-16px)] md:w-auto transition-transform duration-200 active:scale-95">
-              <Link href="/search/home-appliance" style={{margin: "68px 5px",}} className="flex flex-col items-center">
+              <Link href="/search/home-appliance" style={{ margin: "68px 5px" }} className="flex flex-col items-center">
                 <div className="relative overflow-visible h-24 sm:h-28 md:h-32 lg:h-36 w-full flex items-end justify-center mb-1">
-                  <div 
+                  <div
                     className="absolute bottom-0 h-16 sm:h-20 md:h-24 lg:h-28 w-full max-w-35 sm:max-w-40 md:max-w-42.5 rounded-[20px] sm:rounded-3xl lg:rounded-[28px] shadow-lg"
                     style={{
                       width: "195px",
                       height: "170px",
                       background: "radial-gradient(87.5% 87.5% at 50% 50%, #FFFFFF 8.24%, #0899CB 53.3%, #0C98B6 100%)",
-                      margin: "17px 40px 0 40px"
+                      margin: "17px 40px 0 40px",
                     }}
                   />
                   <div className="relative z-10 w-full h-full flex items-center justify-center overflow-visible">
                     <Image
-                     src="/image/home_appliance.png"
+                      src="/image/home_appliance.png"
                       alt="Women's Fashion"
                       width={128}
                       height={128}
-                      style={{height: "283px", paddingBottom: '69px' }}
+                      style={{ height: "283px", paddingBottom: "69px" }}
                       priority
-                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm
-                      h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
+                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
                       sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
                     />
                     
@@ -469,15 +463,15 @@ const CategoryGrid: FC = () => {
 
 
             <div className="group flex flex-col items-center w-[calc(50%-4px)] sm:w-[calc(33.333%-16px)] md:w-auto transition-transform duration-200 active:scale-95">
-              <Link href="/search/kids-fashion" style={{margin: "68px 5px",}} className="flex flex-col items-center">
+              <Link href="/search/kids-fashion" style={{ margin: "68px 5px" }} className="flex flex-col items-center">
                 <div className="relative overflow-visible h-24 sm:h-28 md:h-32 lg:h-36 w-full flex items-end justify-center mb-1">
-                  <div 
+                  <div
                     className="absolute bottom-0 h-16 sm:h-20 md:h-24 lg:h-28 w-full max-w-35 sm:max-w-40 md:max-w-42.5 rounded-[20px] sm:rounded-3xl lg:rounded-[28px] shadow-lg"
                     style={{
                       width: "195px",
                       height: "170px",
                       background: "radial-gradient(87.5% 87.5% at 50% 50%, #FFFFFF 8.24%, #0899CB 53.3%, #0C98B6 100%)",
-                      margin: "17px 40px 0 40px"
+                      margin: "17px 40px 0 40px",
                     }}
                   />
                   <div className="relative z-10 w-full h-full flex items-center justify-center overflow-visible">
@@ -486,13 +480,11 @@ const CategoryGrid: FC = () => {
                       alt="Women's Fashion"
                       width={128}
                       height={128}
-                      style={{height: "283px", paddingBottom: '69px' }}
+                      style={{ height: "283px", paddingBottom: "69px" }}
                       priority
-                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm
-                      h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
+                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
                       sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
                     />
-                    
                   </div>
                 </div>
                 <span className="max-w-[110px] text-center text-xs sm:text-sm lg:text-base font-bold leading-tight text-[#8B1D1D] hover:text-[#6B1515] mt-2">
@@ -532,15 +524,15 @@ const CategoryGrid: FC = () => {
               </Link>
             </div> */}
             <div className="group flex flex-col items-center w-[calc(50%-4px)] sm:w-[calc(33.333%-16px)] md:w-auto transition-transform duration-200 active:scale-95">
-              <Link href="/search/home-decor" style={{margin: "68px 5px",}} className="flex flex-col items-center">
+              <Link href="/search/home-decor" style={{ margin: "68px 5px" }} className="flex flex-col items-center">
                 <div className="relative overflow-visible h-24 sm:h-28 md:h-32 lg:h-36 w-full flex items-end justify-center mb-1">
-                  <div 
+                  <div
                     className="absolute bottom-0 h-16 sm:h-20 md:h-24 lg:h-28 w-full max-w-35 sm:max-w-40 md:max-w-42.5 rounded-[20px] sm:rounded-3xl lg:rounded-[28px] shadow-lg"
                     style={{
                       width: "195px",
                       height: "170px",
                       background: "radial-gradient(87.5% 87.5% at 50% 50%, #FFFFFF 8.24%, #0899CB 53.3%, #0C98B6 100%)",
-                      margin: "17px 40px 0 40px"
+                      margin: "17px 40px 0 40px",
                     }}
                   />
                   <div className="relative z-10 w-full h-full flex items-center justify-center overflow-visible">
@@ -549,13 +541,11 @@ const CategoryGrid: FC = () => {
                       alt="Women's Fashion"
                       width={128}
                       height={128}
-                      style={{height: "283px", paddingBottom: '69px' }}
+                      style={{ height: "283px", paddingBottom: "69px" }}
                       priority
-                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm
-                      h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
+                      className="object-contain object-bottom transition-transform duration-200 group-hover:scale-110 drop-shadow-sm h-40.5 sm:h-45 md:h-50 lg:h-70 w-auto"
                       sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
                     />
-                    
                   </div>
                 </div>
                 <span className="max-w-[110px] text-center text-xs sm:text-sm lg:text-base font-bold leading-tight text-[#8B1D1D] hover:text-[#6B1515] mt-2">

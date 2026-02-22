@@ -86,7 +86,6 @@ const LeaveReviewButton: FC = () => (
       border: "linear-gradient(90deg, #034680 0%, #089BC7 100%)",
       padding: "9px 17px",
       borderRadius: "999px",
-      // border: "none",
       cursor: "pointer",
     }}
   >
@@ -128,12 +127,12 @@ const ReviewCard: FC<ReviewCardProps> = ({ review, isActive }) => {
         transition: "border-color 0.4s ease",
       }}
     >
-      <div style={{minWidth: "150px",height: "243px",position: "relative",marginLeft: "24px",flexShrink: 0,}}>
+      <div style={{ minWidth: "150px", height: "243px", position: "relative", marginLeft: "24px", flexShrink: 0 }}>
         <Image
           src={review.image}
           alt={review.name}
           fill
-          style={{objectFit: "cover",borderRadius: "26px",background: "#ffffff",opacity: 1,padding: "12px 12px 12px 12px",}}
+          style={{ objectFit: "cover", borderRadius: "26px", background: "#ffffff", opacity: 1, padding: "12px 12px 12px 12px" }}
           sizes="200px"
         />
       </div>
@@ -206,17 +205,18 @@ const ReviewsCarousel: FC = () => {
 
   return (
     <section
-  style={{
-    width: "60%",
-    margin: "0 auto",  // This centers the element horizontally
-    paddingTop: "60px",
-    paddingBottom: "60px",
-    fontFamily: "Poppins, sans-serif",
-    overflow: "hidden",
-  }}
->
+      style={{
+        width: "60%",
+        margin: "0 auto",
+        paddingTop: "60px",
+        paddingBottom: "60px",
+        fontFamily: "Poppins, sans-serif",
+        overflow: "hidden",
+      }}
+    >
       <div style={{ textAlign: "center", marginBottom: "48px" }}>
-        <h2 style={{
+        <h2
+          style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 600,
             fontSize: "40px",
@@ -327,7 +327,6 @@ const BenefitsSection: FC = () => {
   return (
     <section
       style={{
-        // background: "#0A9ACC",           // now visible
         padding: "40px 20px 30px",
         width: "100%",
       }}
@@ -354,7 +353,6 @@ const BenefitsSection: FC = () => {
               maxWidth: "280px",
             }}
           >
-            {/* Blue circle with centered icon */}
             <div
               style={{
                 width: "65px",
@@ -373,9 +371,7 @@ const BenefitsSection: FC = () => {
                 alt={item.iconAlt}
                 width={26}
                 height={26}
-                style={{
-                  objectFit: "contain",
-                }}
+                style={{ objectFit: "contain" }}
                 priority={false}
               />
             </div>
@@ -410,11 +406,9 @@ const BenefitsSection: FC = () => {
         ))}
       </div>
 
-      {/* Visible purple bottom line */}
       <div
         style={{
           height: "2px",
-          // background: "#7C3AED",          // purple/violet as in reference
           maxWidth: "1000px",
           margin: "30px auto 0",
         }}

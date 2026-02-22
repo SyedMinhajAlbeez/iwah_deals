@@ -66,7 +66,7 @@ const ProductPage: FC = async () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Banner */}
       <div className="flex mt-3 justify-center w-full">
         <div className="relative w-full max-w-7xl mx-4 h-[150px] md:h-[300px] overflow-hidden rounded-2xl md:rounded-[2.5rem]">

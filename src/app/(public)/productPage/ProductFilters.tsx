@@ -1,5 +1,6 @@
 // components/ProductFilters.tsx
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 interface ProductFiltersProps {
   categories: Array<{ name: string; count: number }>;
@@ -60,7 +61,7 @@ export const ProductFilters: React.FC<ProductFiltersProps> = ({
 
   return (
     <div>
-      <div className=" rounded-lg shadow-md p-6" style={{ backgroundColor: "rgba(250, 165, 34, 0.06)" }}>
+      <div className="rounded-lg shadow-md p-6 bg-[rgba(250,165,34,0.06)]">
         {/* Header with Clear Filter */}
         
         <div className="items-center mb-6">
@@ -172,7 +173,7 @@ export const ProductFilters: React.FC<ProductFiltersProps> = ({
           </div>
         )}
       </div>
-      <div className="rounded-lg shadow-md p-6 pt-3 mt-5" style={{ backgroundColor: "rgba(250, 165, 34, 0.06)" }}>
+      <div className="rounded-lg shadow-md p-6 pt-3 mt-5 bg-[rgba(250,165,34,0.06)]">
         <div className="items-center mb-6">
           <div className='text-center'>
             <h2 className="text-xl font-semibold text-gray-800">Brands</h2>
@@ -184,21 +185,17 @@ export const ProductFilters: React.FC<ProductFiltersProps> = ({
         
         <div className="space-y-3">
             <div className="w-full h-full grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <img 
-                src="/image/partners/partner1.png" 
-                alt="Brand name" 
-                className="w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" 
-              />
-              <img src="/image/partners/partner2.png" alt="Brand name" className="w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-              <img src="/image/partners/partner3.png" alt="Brand name" className="w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-              <img src="/image/partners/partner4.png" alt="Brand name" className="w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-              <img src="/image/partners/partner5.png" alt="Brand name" className="w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-              <img src="/image/partners/partner6.png" alt="Brand name" className="w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
-              <img src="/image/partners/partner7.png" alt="Brand name" className="w-30 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <Image src="/image/partners/partner1.png" alt="Brand 1" width={120} height={60} className="w-30 h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" sizes="120px" />
+              <Image src="/image/partners/partner2.png" alt="Brand 2" width={120} height={60} className="w-30 h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" sizes="120px" />
+              <Image src="/image/partners/partner3.png" alt="Brand 3" width={120} height={60} className="w-30 h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" sizes="120px" />
+              <Image src="/image/partners/partner4.png" alt="Brand 4" width={120} height={60} className="w-30 h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" sizes="120px" />
+              <Image src="/image/partners/partner5.png" alt="Brand 5" width={120} height={60} className="w-30 h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" sizes="120px" />
+              <Image src="/image/partners/partner6.png" alt="Brand 6" width={120} height={60} className="w-30 h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" sizes="120px" />
+              <Image src="/image/partners/partner7.png" alt="Brand 7" width={120} height={60} className="w-30 h-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" sizes="120px" />
             </div>
         </div>
       </div>
-    <div className="rounded-lg shadow-md p-6 pt-3 mt-5" style={{ backgroundColor: "rgba(250, 165, 34, 0.06)" }}>
+    <div className="rounded-lg shadow-md p-6 pt-3 mt-5 bg-[rgba(250,165,34,0.06)]">
         <div className="items-center">
           <div className='text-center'>
             <h2 className="text-xl font-semibold text-black-800">My Wishlist</h2>

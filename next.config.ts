@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
         hostname: "admin.iwahdeals.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
 

@@ -61,11 +61,11 @@ const FooterMenu = () => {
     {
       title: 'Information',
       links: [
-        { name: 'About Us', href: '#' },
+        { name: 'About Us', href: '/about-us' },
         { name: 'About Zip', href: '#' },
         { name: 'Privacy Policy', href: '#' },
         { name: 'Search', href: '#' },
-        { name: 'Terms', href: '#' },
+        { name: 'Terms', href: '/terms' },
         { name: 'Orders and Returns', href: '#' },
         { name: 'Contact Us', href: '#' },
         { name: 'Advanced Search', href: '#' },
