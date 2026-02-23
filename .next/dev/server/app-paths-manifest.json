@@ -1,9 +1,10 @@
 {
-  "/(public)/about-us/page": "app/(public)/about-us/page.js",
-  "/(public)/gadgetCategory/page": "app/(public)/gadgetCategory/page.js",
+  "/(public)/[page]/page": "app/(public)/[page]/page.js",
+  "/(public)/category/page": "app/(public)/category/page.js",
   "/(public)/page": "app/(public)/page.js",
+  "/(public)/product/[slug]/page": "app/(public)/product/[slug]/page.js",
+  "/(public)/productPage/page": "app/(public)/productPage/page.js",
   "/(public)/search/[collection]/page": "app/(public)/search/[collection]/page.js",
-  "/(public)/terms/page": "app/(public)/terms/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

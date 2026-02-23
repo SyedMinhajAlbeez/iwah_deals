@@ -2,14 +2,14 @@
   "node": {
     "60901f75c8ecea50e23f66d8fb96a1149f5b392e61": {
       "workers": {
-        "app/(public)/about-us/page": {
-          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/about-us/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/(public)/[page]/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/[page]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "userSubscribe",
           "filename": "Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts"
         },
-        "app/(public)/gadgetCategory/page": {
-          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/gadgetCategory/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/(public)/category/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/category/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "userSubscribe",
           "filename": "Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts"
@@ -20,25 +20,32 @@
           "exportedName": "userSubscribe",
           "filename": "Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts"
         },
-        "app/(public)/search/[collection]/page": {
-          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/search/[collection]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/(public)/product/[slug]/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/product/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "userSubscribe",
           "filename": "Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts"
         },
-        "app/(public)/terms/page": {
-          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/terms/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/(public)/productPage/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/productPage/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "userSubscribe",
+          "filename": "Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts"
+        },
+        "app/(public)/search/[collection]/page": {
+          "moduleId": "[project]/Desktop/iwah/Iwah_deals/iwah_deals/.next-internal/server/app/(public)/search/[collection]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "userSubscribe",
           "filename": "Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts"
         }
       },
       "layer": {
-        "app/(public)/about-us/page": "action-browser",
-        "app/(public)/gadgetCategory/page": "action-browser",
+        "app/(public)/[page]/page": "action-browser",
+        "app/(public)/category/page": "action-browser",
         "app/(public)/page": "action-browser",
-        "app/(public)/search/[collection]/page": "action-browser",
-        "app/(public)/terms/page": "action-browser"
+        "app/(public)/product/[slug]/page": "action-browser",
+        "app/(public)/productPage/page": "action-browser",
+        "app/(public)/search/[collection]/page": "action-browser"
       },
       "filename": "Desktop/iwah/Iwah_deals/iwah_deals/src/utils/actions.ts",
       "exportedName": "userSubscribe"

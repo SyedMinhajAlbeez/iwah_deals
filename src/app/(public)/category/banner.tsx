@@ -112,9 +112,13 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Banner() {
+export default function Banner({
+  categories,
+}: {
+  categories?: Array<{ name: string; image: string }>;
+}) {
   // Categories data from your image
-  const categories = [
+  const defaultCategories = [
     { name: "3pc Collection", image: "/image/categories/men_category7.png" },
     { name: "2pc Collection", image: "/image/categories/men_category3.png" },
     { name: "Kurta", image: "/image/categories/men_category4.png" },
@@ -130,10 +134,12 @@ export default function Banner() {
     },
   ];
 
+  const items = categories?.length ? categories : defaultCategories;
+
   return (
     <div className="min-h-screen bg-white">
       <div className="flex mt-3 justify-center w-full">
-        <div className="w-3/4">
+        <div className="w-3/4 sm:w-4/4">
           <Image
             src="/image/categories/main banner (1).png"
             alt="Banner"
@@ -153,7 +159,7 @@ export default function Banner() {
         </div>
 
         <div className="flex flex-wrap gap-7 justify-center">
-          {categories.map((category, index) => (
+          {items.map((category, index) => (
             <div
               key={index}
               className="group cursor-pointer"
@@ -168,7 +174,7 @@ export default function Banner() {
                   className="w-full h-full object-cover rounded-lg shadow-md group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="text-center text-base md:text-lg font-medium text-[#8C0D03]">
+              <h3 className="text-center text-base mt-5 md:text-lg font-medium text-[#8C0D03]">
                 {category.name}
               </h3>
             </div>

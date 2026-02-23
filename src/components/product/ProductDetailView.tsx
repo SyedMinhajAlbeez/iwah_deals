@@ -12,6 +12,10 @@ import { useRouter } from "next/navigation";
 import { useCustomToast } from "@/utils/hooks/useToast";
 import { CustomerReviews } from "./customerReview";
 
+import Products from "@components/layout/footer/products";
+
+import PartnerWithSection from "@components/layout/footer/PartnerWithSection";
+
 // Re-implementing StarRating locally for self-containment/custom styling
 const StarRatingLocal: FC<{ rating: number; count: number }> = ({
   rating,
@@ -195,6 +199,33 @@ export const ProductDetailView: FC<ProductDetailViewProps> = ({ product }) => {
           <CustomerReviews />
         </div>
       </div>
+      <PartnerWithSection />
+      <div style={{ textAlign: "center", marginBottom: "48px" , marginTop: "48px"}}>
+        <h2
+          style={{
+            fontFamily: "Poppins, sans-serif",
+            fontWeight: 600,
+            fontSize: "40px",
+            lineHeight: "1",
+            color: "#000000",
+            margin: "0 0 12px 0",
+          }}
+        >
+          Related Products
+        </h2>
+        <p
+          style={{
+            fontFamily: "Poppins, sans-serif",
+            fontWeight: 400,
+            fontSize: "16px",
+            color: "#666666",
+            margin: 0,
+          }}
+        >
+          Explore more product you will definitely love!
+        </p>
+      </div>
+      <Products />
     </div>
   );
 };

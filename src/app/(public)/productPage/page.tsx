@@ -1,5 +1,4 @@
 // Server Component - fetches real products from GraphQL
-import { FC } from "react";
 import { graphqlRequest } from "@/lib/graphql-fetch";
 import { GET_ALL_PRODUCTS } from "@/graphql";
 import Image from "next/image";
@@ -38,8 +37,13 @@ interface AllProductsResponse {
 }
 
 
-const ProductPage: FC = async () => {
+export default async function ProductPage({
+  searchParams,
+}: {
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
   let products: SliderProduct[] = [];
+  await searchParams;
 
   try {
     const data = await graphqlRequest<AllProductsResponse>(
@@ -68,15 +72,14 @@ const ProductPage: FC = async () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Banner */}
-      <div className="flex mt-3 justify-center w-full">
-        <div className="relative w-full max-w-7xl mx-4 h-[150px] md:h-[300px] overflow-hidden rounded-2xl md:rounded-[2.5rem]">
+      <div className="flex mt-6 justify-center w-full">
+        <div className="w-3/4">
           <Image
             src="/image/productPageBanner.png"
             alt="Banner"
-            fill
-            priority
-            className="object-cover"
-            sizes="(max-width: 1280px) 100vw, 1280px"
+            width={1200} // Actual width of your file
+            height={500}  // Desired height
+            className="rounded-lg w-full h-auto"
           />
         </div>
       </div>
@@ -95,6 +98,4 @@ const ProductPage: FC = async () => {
       </div>
     </div>
   );
-};
-
-export default ProductPage;
+}

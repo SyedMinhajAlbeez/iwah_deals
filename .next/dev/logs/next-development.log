@@ -1,33 +1,971 @@
-[00:00:08.496] Server  LOG      ✓ Ready in 7s
-[00:02:23.847] Server  LOG      ○ Compiling / ...
-[00:02:38.695] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:42.934] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
-[00:02:44.082] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"20\",\n  \"sku\": \"454554654\",\n  \"type\": \"simple\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"9656213212\",\n  \"name\": \"Emerald Heritage Hand-Loomed Kurta\",\n  \"shortDescription\": \"<p>A majestic forest green Kurta with antique gold Zari work. Traditional craftsmanship meet contemporary tailoring.</p>\",\n  \"description\": \"<p>The Emerald Heritage Kurta is a tribute to traditional craftsmanship. Featuring a rich, deep green hue, the collar and chest are adorned with hand-stitched antique gold Zari embroidery. The fabric is hand-loomed to provide a unique texture that speaks of heritage and quality. With its structured shoulders and reinforced stitching, this Kurta is designed for those who want to make a powerful statement this Eid.</p>\",\n  \"urlKey\": \"emerald-heritage-hand-loomed-kurta\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/emerald-heritage-hand-loomed-kurta\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1290,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": 0.9,\n  \"createdAt\": \"2026-02-20 15:14:33\",\n  \"updatedAt\": \"2026-02-20 15:14:33\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [],\n  \"__typename\": \"Product\"\n}"
-[00:02:44.092] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"20\",\n  \"sku\": \"454554654\",\n  \"type\": \"simple\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"9656213212\",\n  \"name\": \"Emerald Heritage Hand-Loomed Kurta\",\n  \"shortDescription\": \"<p>A majestic forest green Kurta with antique gold Zari work. Traditional craftsmanship meet contemporary tailoring.</p>\",\n  \"description\": \"<p>The Emerald Heritage Kurta is a tribute to traditional craftsmanship. Featuring a rich, deep green hue, the collar and chest are adorned with hand-stitched antique gold Zari embroidery. The fabric is hand-loomed to provide a unique texture that speaks of heritage and quality. With its structured shoulders and reinforced stitching, this Kurta is designed for those who want to make a powerful statement this Eid.</p>\",\n  \"urlKey\": \"emerald-heritage-hand-loomed-kurta\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/emerald-heritage-hand-loomed-kurta\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1290,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": 0.9,\n  \"createdAt\": \"2026-02-20 15:14:33\",\n  \"updatedAt\": \"2026-02-20 15:14:33\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [],\n  \"__typename\": \"Product\"\n}"
-[00:02:50.777] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
-[00:03:26.983] Browser WARN    Image with src "/image/webBanner3.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:04.104] Server  LOG      ✓ Ready in 3.5s
+[00:00:24.958] Server  LOG      ○ Compiling /productPage ...
+[00:00:35.865] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:40.846] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:00:47.362] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:00:53.681] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:03:30.011] Server  LOG      ○ Compiling /search/[collection] ...
-[00:03:35.262] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_d27861d8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:03:35.266] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_d07f1388._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:03:35.270] Server  ERROR    ⨯ ApolloError: Cannot query field "edges" on type "AttributeOption".
-[00:03:37.208] Server  ERROR    ⨯ TypeError: controller[kState].transformAlgorithm is not a function
-[00:03:37.210] Server  ERROR    ⨯ TypeError: controller[kState].transformAlgorithm is not a function
-[00:03:37.248] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_d27861d8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:03:37.250] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_d07f1388._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:03:37.253] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
-[00:03:40.598] Browser WARN    Image with src "/image/gadgets/banner2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:03:40.598] Browser WARN    Image with src "/image/gadgets/banner3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:03:40.761] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:40.761] Browser WARN    Image with src "/image/gadgets/category1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:03:40.761] Browser WARN    Image with src "/image/gadgets/category2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:03:40.761] Browser WARN    Image with src "/image/gadgets/category3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:03:40.761] Browser WARN    Image with src "/image/gadgets/category4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:04:01.346] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"20\",\n  \"sku\": \"454554654\",\n  \"type\": \"simple\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"9656213212\",\n  \"name\": \"Emerald Heritage Hand-Loomed Kurta\",\n  \"shortDescription\": \"<p>A majestic forest green Kurta with antique gold Zari work. Traditional craftsmanship meet contemporary tailoring.</p>\",\n  \"description\": \"<p>The Emerald Heritage Kurta is a tribute to traditional craftsmanship. Featuring a rich, deep green hue, the collar and chest are adorned with hand-stitched antique gold Zari embroidery. The fabric is hand-loomed to provide a unique texture that speaks of heritage and quality. With its structured shoulders and reinforced stitching, this Kurta is designed for those who want to make a powerful statement this Eid.</p>\",\n  \"urlKey\": \"emerald-heritage-hand-loomed-kurta\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/emerald-heritage-hand-loomed-kurta\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1290,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": 0.9,\n  \"createdAt\": \"2026-02-20 15:14:33\",\n  \"updatedAt\": \"2026-02-20 15:14:33\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [],\n  \"__typename\": \"Product\"\n}"
-[00:04:02.426] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"20\",\n  \"sku\": \"454554654\",\n  \"type\": \"simple\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"9656213212\",\n  \"name\": \"Emerald Heritage Hand-Loomed Kurta\",\n  \"shortDescription\": \"<p>A majestic forest green Kurta with antique gold Zari work. Traditional craftsmanship meet contemporary tailoring.</p>\",\n  \"description\": \"<p>The Emerald Heritage Kurta is a tribute to traditional craftsmanship. Featuring a rich, deep green hue, the collar and chest are adorned with hand-stitched antique gold Zari embroidery. The fabric is hand-loomed to provide a unique texture that speaks of heritage and quality. With its structured shoulders and reinforced stitching, this Kurta is designed for those who want to make a powerful statement this Eid.</p>\",\n  \"urlKey\": \"emerald-heritage-hand-loomed-kurta\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/emerald-heritage-hand-loomed-kurta\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1290,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": 0.9,\n  \"createdAt\": \"2026-02-20 15:14:33\",\n  \"updatedAt\": \"2026-02-20 15:14:33\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [],\n  \"__typename\": \"Product\"\n}"
-[00:04:03.287] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_d27861d8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:04:03.291] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_d07f1388._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:04:03.293] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
-[00:04:03.308] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_d27861d8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:04:03.309] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_d07f1388._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:04:03.320] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[00:00:53.681] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:53.681] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:53.681] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:53.681] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:53.681] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:53.681] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:53.681] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:54.231] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:18.559] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:21.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:21.462] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:22.238] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:22.239] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:22.239] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:22.239] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:22.239] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:22.239] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:22.239] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:31.419] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:13:03.573] Server  WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:03.575] Server  WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:03.577] Server  WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:03.578] Server  WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:03.580] Server  WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:04.472] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"20\",\n  \"sku\": \"454554654\",\n  \"type\": \"simple\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"9656213212\",\n  \"name\": \"Emerald Heritage Hand-Loomed Kurta\",\n  \"shortDescription\": \"<p>A majestic forest green Kurta with antique gold Zari work. Traditional craftsmanship meet contemporary tailoring.</p>\",\n  \"description\": \"<p>The Emerald Heritage Kurta is a tribute to traditional craftsmanship. Featuring a rich, deep green hue, the collar and chest are adorned with hand-stitched antique gold Zari embroidery. The fabric is hand-loomed to provide a unique texture that speaks of heritage and quality. With its structured shoulders and reinforced stitching, this Kurta is designed for those who want to make a powerful statement this Eid.</p>\",\n  \"urlKey\": \"emerald-heritage-hand-loomed-kurta\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/emerald-heritage-hand-loomed-kurta\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1290,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": 0.9,\n  \"createdAt\": \"2026-02-20 15:14:33\",\n  \"updatedAt\": \"2026-02-20 15:14:33\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [],\n  \"__typename\": \"Product\"\n}"
+[00:13:05.372] Server  WARN     ⚠ Cross origin request detected from 192.168.50.227 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:13:06.863] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:08.666] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:08.666] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:08.666] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:08.666] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:08.666] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[00:13:09.252] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:18.347] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:13:20.475] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:20.482] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:20.495] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[00:13:20.505] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:20.506] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:20.509] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[00:13:23.079] Server  LOG      ○ Compiling /[page] ...
+[00:13:23.780] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:23.781] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:23.781] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:23.782] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:23.782] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:23.782] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:23.782] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:25.084] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:13:25.086] Server  ERROR    ⨯ Error: {"message":"Cannot query field \"pageByUrlKeypages\" on type \"Query\".","locations":[{"line":2,"column":5}]}
+[00:16:01.861] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:04.259] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:04.450] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:06.374] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:06.374] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:06.374] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:06.374] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:06.374] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:06.374] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:06.374] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:15.365] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:16:32.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:33.224] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:33.733] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:33.734] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:33.734] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:33.734] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:33.734] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:33.734] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:33.734] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:44.375] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:27:39.961] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.962] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.964] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Unknown type "InputData".
+[00:27:39.967] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.968] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.969] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Unknown type "InputData".
+[00:27:39.971] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.972] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.973] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Unknown type "InputData".
+[00:27:39.974] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.975] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:39.976] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Unknown type "InputData".
+[00:29:36.315] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:29:36.316] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:29:36.318] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Unknown type "InputData".
+[00:30:01.599] Server  LOG      ✓ Compiled in 336ms
+[00:32:26.721] Server  LOG      ✓ Compiled in 237ms
+[00:32:46.491] Server  LOG      ✓ Compiled in 219ms
+[00:32:47.373] Browser ERROR   ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/ProductListing.tsx:138:11
+Ecmascript file had an error
+  136 |
+  137 |     // Filter options (Mock counts for design as requested)
+> 138 |     const categories = [
+      |           ^^^^^^^^^^
+  139 |         { name: 'Casual wear', count: 15 },
+  140 |         { name: 'Formal Collection', count: 45 },
+  141 |         { name: 'Festive Collection', count: 1 }
+
+the name `categories` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/ProductListing.tsx
+    ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx
+[00:32:47.373] Browser ERROR   ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/ProductListing.tsx:151:11
+Ecmascript file had an error
+  149 |     ];
+  150 |
+> 151 |     const colorsWithCounts = [
+      |           ^^^^^^^^^^^^^^^^
+  152 |         { name: 'Black', color: 'black', count: 18 },
+  153 |         { name: 'Red', color: 'red', count: 12 },
+  154 |         { name: 'Blue', color: 'blue', count: 15 }
+
+the name `colorsWithCounts` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/ProductListing.tsx
+    ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx
+[00:32:47.373] Browser ERROR   ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/ProductListing.tsx:144:11
+Ecmascript file had an error
+  142 |     ];
+  143 |
+> 144 |     const priceRangesWithCounts = [
+      |           ^^^^^^^^^^^^^^^^^^^^^
+  145 |         { id: 'price-0', label: 'BHD 0.00 – BHD 1,00/td0.00', min: 0, max: 1000, count: 35 },
+  146 |         { id: 'price-1', label: 'BHD 1,000.00 – BHD 2,000.00', min: 1000, max: 2000, count: 15 },
+  147 |         { id: 'price-2', label: 'BHD 2,000.00 – BHD 3,000.00', min: 2000, max: 3000, count: 8 },
+
+the name `priceRangesWithCounts` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/ProductListing.tsx
+    ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx
+[00:34:31.158] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.162] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.554] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.556] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.558] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.560] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.564] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.567] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.570] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.572] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.575] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.578] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.581] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.582] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.585] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.587] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.590] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.592] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.595] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:31.597] Server  ERROR    ⨯ ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:34:32.373] Browser ERROR   ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:49.373] Browser ERROR   ./Desktop/iwah/Iwah_deals/iwah_deals/src/app/(public)/productPage/page.tsx:5:1
+Module not found: Can't resolve './ProductListing'
+  3 | import { GET_ALL_PRODUCTS } from "@/graphql";
+  4 | import Image from "next/image";
+> 5 | import { ProductListing, SliderProduct } from "./ProductListing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { NOT_IMAGE } from "@/utils/constants";
+  7 |
+  8 | interface ImageNode {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:35:37.940] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:35:37.941] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:35:37.942] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Unknown type "InputData".
+[00:36:25.006] Server  LOG      ✓ Compiled in 245ms
+[00:38:06.068] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:06.640] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:06.649] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:38:07.668] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:38:07.669] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:38:07.670] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Unknown type "InputData".
+[00:38:08.017] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:08.017] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:08.017] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:08.017] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:08.017] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:08.017] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:08.017] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:08.017] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:38:16.235] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:40:04.553] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.554] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.556] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[00:40:04.558] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.559] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.560] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[00:40:04.563] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.564] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.566] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[00:40:04.567] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.568] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:04.569] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[00:40:13.041] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:13.042] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:40:13.042] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[00:41:17.509] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:17.924] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:41:18.403] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:18.404] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:18.405] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[00:41:19.664] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:19.664] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:41:22.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:22.968] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:23.631] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:23.632] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:23.633] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[00:41:23.903] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:23.903] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:23.903] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:23.903] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:23.903] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:23.903] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:23.903] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:34.363] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:44:10.359] Server  LOG      ✓ Compiled in 442ms
+[00:44:42.212] Server  LOG      ✓ Compiled in 235ms
+[00:45:00.253] Server  LOG      ✓ Compiled in 222ms
+[00:46:32.649] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:33.025] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:33.027] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:46:34.181] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:34.182] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:34.182] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:34.182] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:34.182] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:34.182] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:34.182] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:34.182] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:46:42.788] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:47:51.578] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:51.739] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:52.741] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:47:52.851] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:52.851] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:52.851] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:52.851] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:52.851] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:52.851] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:47:52.851] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:00.239] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:00.421] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:01.226] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:48:01.336] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:01.336] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:01.336] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:01.336] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:01.336] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:01.336] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:01.336] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:11.367] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:53:55.818] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:56.080] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:57.032] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:57.032] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:57.032] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:57.032] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:57.032] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:57.033] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:57.033] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:59.800] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:59.996] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:00.437] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:54:00.519] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:00.519] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:00.519] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:00.519] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:00.519] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:00.519] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:00.519] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:08.940] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:09.129] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:09.940] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:54:10.063] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:10.063] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:10.063] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:10.063] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:10.063] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:10.063] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:10.063] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:20.363] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:54:29.844] Server  LOG      ✓ Compiled in 223ms
+[00:54:33.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:33.795] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:34.729] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:34.729] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:34.729] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:34.729] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:34.729] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:34.729] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:34.729] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:37.253] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:38.085] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:38.425] Browser WARN    Image with src "https://admin.iwahdeals.com/public/images/product/23/m43YxgRxpguHspiBLxHov8SrMlM1mK6vFCmi2Fog.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:54:38.425] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:38.426] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:38.426] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:38.426] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:38.426] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:38.426] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:38.426] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:43.029] Server  LOG      ✓ Compiled in 174ms
+[00:54:46.262] Server  LOG      ✓ Compiled in 208ms
+[00:54:47.419] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:56:04.519] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:05.369] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:10.082] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:10.082] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:10.082] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:10.082] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:10.082] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:10.082] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:10.082] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:14.648] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:56:26.165] Server  LOG      ✓ Compiled in 375ms
+[00:56:52.489] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:04.373] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:57:17.034] Server  LOG      ✓ Compiled in 193ms
+[00:57:17.366] Browser LOG     checkPerPage null
+[00:57:17.366] Browser LOG     checkPerPage null
+[00:57:19.763] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:19.763] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:19.763] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:19.763] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:19.763] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:19.763] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:19.763] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:20.754] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:29.916] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:30.514] Server  LOG     checkPerPage null
+[00:57:36.249] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:57:36.483] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:36.483] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:36.483] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:36.483] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:36.483] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:36.483] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:36.483] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:36.483] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:40.131] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:58:44.216] Server  LOG      ✓ Compiled in 173ms
+[00:58:48.345] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:49.262] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:50.018] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:58:50.243] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:50.244] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:50.244] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:50.244] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:50.244] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:50.244] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:50.244] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:58:57.668] Server  LOG      ✓ Compiled in 225ms
+[00:58:58.983] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:59:02.132] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:03.773] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="page" pagePath="/Desktop/i...">
+      <SegmentTrieNode>
+      <ProductPage>
+        <div className="min-h-scre...">
+          <div>
+          <div className="container ...">
+            <div>
+            <ProductListing initialProducts={[...]}>
+              <div className="flex flex-...">
+                <div>
+                <div className="lg:w-1/4 h...">
+                  <ProductFilters categories={[...]} selectedCategory="all" ...>
+                    <div>
+                      <div className="rounded-lg...">
+                        <div>
+                        <div>
+                        <div className="mb-6 pb-6 ...">
+                          <h3>
+                          <div className="space-y-3">
+                            <label className="flex items...">
+                              <div className="flex items...">
+                                <input>
+                                <span className="text-gray-700 group-hover:text-blue-600 transition-colors">
++                                 BHD 0.00 – BHD 1,00/td0.00
+-                                 BHD 0.00 - BHD 1,000.00
+                              ...
+                            ...
+                        ...
+                      ...
+                ...
+    ...
+
+[00:59:03.773] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.773] Browser WARN    Image with src "https://admin.iwahdeals.com/public/images/product/3/VnYAseudFRZJIYeFqajoaF9qYdmLOJ7RQWxjohyI.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:59:14.184] Server  LOG      ✓ Compiled in 183ms
+[00:59:14.392] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[00:59:17.972] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:18.390] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:19.056] Browser WARN    Image with src "/image/placeholder.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:59:19.182] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:19.182] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:19.182] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:19.182] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:19.182] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:19.182] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:19.182] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:29.365] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[01:01:51.654] Server  LOG      ✓ Compiled in 205ms
+[01:02:14.021] Server  LOG      ✓ Compiled in 172ms
+[01:06:37.186] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.187] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.188] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:37.190] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.192] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.194] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:37.199] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.200] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.202] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:37.204] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.206] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:37.208] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:38.451] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:38.934] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:38.935] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:38.936] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:39.331] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[01:06:42.037] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:42.038] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:42.040] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:42.241] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:42.242] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:42.243] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:42.246] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:42.246] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:06:43.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:44.401] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:44.402] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:06:44.404] Server  ERROR   [ProductPage] Failed to fetch products: ApolloError: Internal server error
+[01:06:45.047] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:45.047] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:06:45.053] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[01:06:45.528] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:45.528] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:45.528] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:45.528] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:45.528] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:45.528] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:45.528] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:54.090] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[01:07:00.968] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:01.896] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[01:07:02.101] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:03.444] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:07:03.444] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:03.444] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:03.444] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:03.444] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:03.444] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:03.444] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:03.444] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:11.291] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[01:08:20.913] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:21.558] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:22.456] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:22.456] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:22.456] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:22.456] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:22.457] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:22.457] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:22.457] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:25.532] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:25.532] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:25.532] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:25.532] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:25.532] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:26.529] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"20\",\n  \"sku\": \"454554654\",\n  \"type\": \"simple\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"9656213212\",\n  \"name\": \"Emerald Heritage Hand-Loomed Kurta\",\n  \"shortDescription\": \"<p>A majestic forest green Kurta with antique gold Zari work. Traditional craftsmanship meet contemporary tailoring.</p>\",\n  \"description\": \"<p>The Emerald Heritage Kurta is a tribute to traditional craftsmanship. Featuring a rich, deep green hue, the collar and chest are adorned with hand-stitched antique gold Zari embroidery. The fabric is hand-loomed to provide a unique texture that speaks of heritage and quality. With its structured shoulders and reinforced stitching, this Kurta is designed for those who want to make a powerful statement this Eid.</p>\",\n  \"urlKey\": \"emerald-heritage-hand-loomed-kurta\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/emerald-heritage-hand-loomed-kurta\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1290,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": 0.9,\n  \"createdAt\": \"2026-02-20 15:14:33\",\n  \"updatedAt\": \"2026-02-20 15:14:33\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"29\",\n      \"type\": \"images\",\n      \"path\": \"product/20/D76rfwPSA6VvBphyXXz4ggFMfBkoZpdIVcylamVd.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/20/D76rfwPSA6VvBphyXXz4ggFMfBkoZpdIVcylamVd.webp\",\n      \"productId\": \"20\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:08:27.482] Server  LOG      ○ Compiling /category ...
+[01:08:30.010] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:08:30.038] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:08:30.055] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:08:30.060] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:08:30.063] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:08:30.068] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:08:31.182] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:08:31.183] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:08:31.185] Server  ERROR   [category/page] Failed to fetch GraphQL data: ApolloError: Cannot query field "edges" on type "CategoryPaginator".
+[01:08:31.253] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[01:08:39.566] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:40.175] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:40.733] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"20\",\n  \"sku\": \"454554654\",\n  \"type\": \"simple\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"9656213212\",\n  \"name\": \"Emerald Heritage Hand-Loomed Kurta\",\n  \"shortDescription\": \"<p>A majestic forest green Kurta with antique gold Zari work. Traditional craftsmanship meet contemporary tailoring.</p>\",\n  \"description\": \"<p>The Emerald Heritage Kurta is a tribute to traditional craftsmanship. Featuring a rich, deep green hue, the collar and chest are adorned with hand-stitched antique gold Zari embroidery. The fabric is hand-loomed to provide a unique texture that speaks of heritage and quality. With its structured shoulders and reinforced stitching, this Kurta is designed for those who want to make a powerful statement this Eid.</p>\",\n  \"urlKey\": \"emerald-heritage-hand-loomed-kurta\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/emerald-heritage-hand-loomed-kurta\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1290,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": 0.9,\n  \"createdAt\": \"2026-02-20 15:14:33\",\n  \"updatedAt\": \"2026-02-20 15:14:33\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"29\",\n      \"type\": \"images\",\n      \"path\": \"product/20/D76rfwPSA6VvBphyXXz4ggFMfBkoZpdIVcylamVd.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/20/D76rfwPSA6VvBphyXXz4ggFMfBkoZpdIVcylamVd.webp\",\n      \"productId\": \"20\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:08:40.745] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:40.745] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:40.745] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:40.745] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:40.745] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:08:47.748] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:47.748] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:47.748] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:47.748] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:47.748] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:47.748] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:47.748] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:49.812] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[01:21:19.514] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:20.239] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:21.138] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:21.138] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:21.138] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:21.138] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:21.138] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:21.138] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:21.138] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:22.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:23.102] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:23.332] Browser WARN    Image with src "/image/productPageBanner.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:21:23.332] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:23.332] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:23.332] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:23.444] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:23.444] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:23.445] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:23.445] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:27.956] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:27.956] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:27.956] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:27.956] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:27.956] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:29.281] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"91\",\n  \"sku\": \"54354635\",\n  \"type\": \"downloadable\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"52330\",\n  \"name\": \"Azure Breeze Kaftan\",\n  \"shortDescription\": \"<p>A relaxed-fit sky blue silk Kaftan with a cinched waist and crystal-encrusted neckline. Modern comfort meets high-fashion.</p>\",\n  \"description\": \"<p>Effortless and airy, the Azure Breeze Kaftan is perfect for hosting Eid brunch. Made from sand-washed Crêpe Silk, the fabric feels like a cool breeze against the skin. It features an adjustable drawstring at the waist to create a flattering shape and a deep V-neckline adorned with genuine Swarovski crystals. This one-size-fits-all masterpiece is the ultimate choice for the modern woman who values style that doesn't restrict her movement.</p>\",\n  \"urlKey\": \"azure-breeze-kaftan\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/azure-breeze-kaftan\",\n  \"status\": true,\n  \"guestCheckout\": false,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1200,\n  \"specialPrice\": 1000,\n  \"specialPriceFrom\": \"2026-02-02\",\n  \"specialPriceTo\": \"2026-02-27\",\n  \"weight\": null,\n  \"createdAt\": \"2026-02-20 15:58:23\",\n  \"updatedAt\": \"2026-02-20 15:58:23\",\n  \"isInWishlist\": false,\n  \"isInSale\": true,\n  \"isSaleable\": false,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"30\",\n      \"type\": \"images\",\n      \"path\": \"product/91/gizGoPlYOQxE9AuyArtphiAAdrgSbgKSXit0CksR.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/91/gizGoPlYOQxE9AuyArtphiAAdrgSbgKSXit0CksR.webp\",\n      \"productId\": \"91\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:21:30.164] Server  ERROR    ⨯ TypeError: controller[kState].transformAlgorithm is not a function
+[01:21:30.484] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"91\",\n  \"sku\": \"54354635\",\n  \"type\": \"downloadable\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"52330\",\n  \"name\": \"Azure Breeze Kaftan\",\n  \"shortDescription\": \"<p>A relaxed-fit sky blue silk Kaftan with a cinched waist and crystal-encrusted neckline. Modern comfort meets high-fashion.</p>\",\n  \"description\": \"<p>Effortless and airy, the Azure Breeze Kaftan is perfect for hosting Eid brunch. Made from sand-washed Crêpe Silk, the fabric feels like a cool breeze against the skin. It features an adjustable drawstring at the waist to create a flattering shape and a deep V-neckline adorned with genuine Swarovski crystals. This one-size-fits-all masterpiece is the ultimate choice for the modern woman who values style that doesn't restrict her movement.</p>\",\n  \"urlKey\": \"azure-breeze-kaftan\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/azure-breeze-kaftan\",\n  \"status\": true,\n  \"guestCheckout\": false,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"\",\n  \"metaKeywords\": \"\",\n  \"metaDescription\": \"\",\n  \"price\": 1200,\n  \"specialPrice\": 1000,\n  \"specialPriceFrom\": \"2026-02-02\",\n  \"specialPriceTo\": \"2026-02-27\",\n  \"weight\": null,\n  \"createdAt\": \"2026-02-20 15:58:23\",\n  \"updatedAt\": \"2026-02-20 15:58:23\",\n  \"isInWishlist\": false,\n  \"isInSale\": true,\n  \"isSaleable\": false,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"30\",\n      \"type\": \"images\",\n      \"path\": \"product/91/gizGoPlYOQxE9AuyArtphiAAdrgSbgKSXit0CksR.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/91/gizGoPlYOQxE9AuyArtphiAAdrgSbgKSXit0CksR.webp\",\n      \"productId\": \"91\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:21:31.373] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:31.374] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:31.376] Server  ERROR    ⨯ ApolloError: Cannot query field "edges" on type "AttributeOption".
+[01:21:31.435] Server  ERROR    ⨯ TypeError: controller[kState].transformAlgorithm is not a function
+[01:21:31.437] Server  ERROR    ⨯ TypeError: controller[kState].transformAlgorithm is not a function
+[01:21:31.669] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"110\",\n  \"sku\": \"testcfu456\",\n  \"type\": \"configurable\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"testabc123\",\n  \"name\": \"bin saeed\",\n  \"shortDescription\": \"<p>test abc</p>\",\n  \"description\": \"<p>test abc</p>\",\n  \"urlKey\": \"bin-saeed\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/bin-saeed\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"abc\",\n  \"metaKeywords\": \"abc\",\n  \"metaDescription\": \"abc\",\n  \"price\": null,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": null,\n  \"createdAt\": \"2026-02-22 13:30:28\",\n  \"updatedAt\": \"2026-02-22 13:30:28\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"63\",\n      \"type\": \"images\",\n      \"path\": \"product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"64\",\n      \"type\": \"images\",\n      \"path\": \"product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"65\",\n      \"type\": \"images\",\n      \"path\": \"product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"66\",\n      \"type\": \"images\",\n      \"path\": \"product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"67\",\n      \"type\": \"images\",\n      \"path\": \"product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:21:32.321] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:32.902] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:32.905] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:32.908] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:21:33.669] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:33.669] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:33.669] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:33.669] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:33.669] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:34.005] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:37.811] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:40.058] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:40.978] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"110\",\n  \"sku\": \"testcfu456\",\n  \"type\": \"configurable\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"testabc123\",\n  \"name\": \"bin saeed\",\n  \"shortDescription\": \"<p>test abc</p>\",\n  \"description\": \"<p>test abc</p>\",\n  \"urlKey\": \"bin-saeed\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/bin-saeed\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"abc\",\n  \"metaKeywords\": \"abc\",\n  \"metaDescription\": \"abc\",\n  \"price\": null,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": null,\n  \"createdAt\": \"2026-02-22 13:30:28\",\n  \"updatedAt\": \"2026-02-22 13:30:28\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"63\",\n      \"type\": \"images\",\n      \"path\": \"product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"64\",\n      \"type\": \"images\",\n      \"path\": \"product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"65\",\n      \"type\": \"images\",\n      \"path\": \"product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"66\",\n      \"type\": \"images\",\n      \"path\": \"product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"67\",\n      \"type\": \"images\",\n      \"path\": \"product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:21:41.109] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:41.109] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:41.109] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:41.109] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:41.109] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:41.358] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:21:49.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:51.797] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:51.797] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:51.797] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:51.797] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:51.797] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:21:52.402] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"110\",\n  \"sku\": \"testcfu456\",\n  \"type\": \"configurable\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"testabc123\",\n  \"name\": \"bin saeed\",\n  \"shortDescription\": \"<p>test abc</p>\",\n  \"description\": \"<p>test abc</p>\",\n  \"urlKey\": \"bin-saeed\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/bin-saeed\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"abc\",\n  \"metaKeywords\": \"abc\",\n  \"metaDescription\": \"abc\",\n  \"price\": null,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": null,\n  \"createdAt\": \"2026-02-22 13:30:28\",\n  \"updatedAt\": \"2026-02-22 13:30:28\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"63\",\n      \"type\": \"images\",\n      \"path\": \"product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"64\",\n      \"type\": \"images\",\n      \"path\": \"product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"65\",\n      \"type\": \"images\",\n      \"path\": \"product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"66\",\n      \"type\": \"images\",\n      \"path\": \"product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"67\",\n      \"type\": \"images\",\n      \"path\": \"product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:21:53.229] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:53.230] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:53.231] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:21:53.241] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:53.243] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:53.251] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:21:59.445] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:59.446] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:59.448] Server  ERROR    ⨯ ApolloError: Cannot query field "edges" on type "AttributeOption".
+[01:21:59.694] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[01:21:59.727] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:59.728] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:59.729] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:22:09.085] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:22:09.087] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:22:09.089] Server  ERROR    ⨯ ApolloError: Cannot query field "edges" on type "AttributeOption".
+[01:22:09.297] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:22:09.299] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:22:09.301] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:22:11.328] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:12.205] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:12.205] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:12.205] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:12.205] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:12.205] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:12.205] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:12.205] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:14.343] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:15.133] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:15.133] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:15.133] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:15.133] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:15.133] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:15.133] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:15.133] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:15.133] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:24.710] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm
+[01:24:12.868] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:13.237] Browser WARN    Image with src "/image/webBanner1.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:24:13.237] Browser WARN    Image with src "/image/webBanner2.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:24:13.237] Browser WARN    Image with src "/image/webBanner3.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:24:13.237] Browser WARN    Image with src "/image/webBanner4.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:24:13.237] Browser WARN    Image with src "/image/webBanner5.jpg" is using deprecated "onLoadingComplete" property. Please use the "onLoad" property instead.
+[01:24:13.723] Server  LOG     [BestSelling] first product: "{\n  \"id\": \"110\",\n  \"sku\": \"testcfu456\",\n  \"type\": \"configurable\",\n  \"parentId\": null,\n  \"attributeFamilyId\": \"1\",\n  \"productNumber\": \"testabc123\",\n  \"name\": \"bin saeed\",\n  \"shortDescription\": \"<p>test abc</p>\",\n  \"description\": \"<p>test abc</p>\",\n  \"urlKey\": \"bin-saeed\",\n  \"shareURL\": \"https://admin.iwahdeals.com/public/bin-saeed\",\n  \"status\": true,\n  \"guestCheckout\": true,\n  \"visibleIndividually\": true,\n  \"metaTitle\": \"abc\",\n  \"metaKeywords\": \"abc\",\n  \"metaDescription\": \"abc\",\n  \"price\": null,\n  \"specialPrice\": null,\n  \"specialPriceFrom\": null,\n  \"specialPriceTo\": null,\n  \"weight\": null,\n  \"createdAt\": \"2026-02-22 13:30:28\",\n  \"updatedAt\": \"2026-02-22 13:30:28\",\n  \"isInWishlist\": false,\n  \"isInSale\": false,\n  \"isSaleable\": true,\n  \"averageRating\": \"0.0\",\n  \"percentageRating\": [\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"images\": [\n    {\n      \"id\": \"63\",\n      \"type\": \"images\",\n      \"path\": \"product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/fNbQHf0IVgfKvZBUw6CEZYfheOlAbFG9tckC9Njd.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"64\",\n      \"type\": \"images\",\n      \"path\": \"product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/XPnP8imvUJbUDbY9p9kwe2jbqgue8q5xfdw9rOrV.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"65\",\n      \"type\": \"images\",\n      \"path\": \"product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/vKfsJbQnJqtDv89gkJ5gAEFgmnXJAQJ2NcnaiQaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"66\",\n      \"type\": \"images\",\n      \"path\": \"product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/M5xt8qaMEws17nhvJbZIagifriT5awTFjxmvBxaj.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    },\n    {\n      \"id\": \"67\",\n      \"type\": \"images\",\n      \"path\": \"product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"url\": \"https://admin.iwahdeals.com/public/images/product/110/5VVwCszd1Watk7sScJzi4va3ZFduk7A3uUCtVAMT.webp\",\n      \"productId\": \"110\",\n      \"__typename\": \"Image\"\n    }\n  ],\n  \"__typename\": \"Product\"\n}"
+[01:24:14.629] Browser WARN    Image with src "/image/icons/Vector.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.246] Browser WARN    Image with src "/image/partners/partner1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.246] Browser WARN    Image with src "/image/partners/partner2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.246] Browser WARN    Image with src "/image/partners/partner3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.246] Browser WARN    Image with src "/image/partners/partner4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.246] Browser WARN    Image with src "/image/partners/partner5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.246] Browser WARN    Image with src "/image/partners/partner6.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.246] Browser WARN    Image with src "/image/partners/partner7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:15.812] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:24:15.813] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:24:15.815] Server  ERROR    ⨯ ApolloError: Cannot query field "edges" on type "AttributeOption".
+[01:24:17.457] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_@apollo_client_98b56408._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:24:17.458] Server  ERROR   C:\Users\Usman computer\Desktop\iwah\Iwah_deals\iwah_deals\.next\dev\server\chunks\ssr\83061_e9c01301._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:24:17.461] Server  ERROR    ⨯ ApolloError: Cannot query field "treeCategories" on type "Query". Did you mean "homeCategories", "taxCategories", "categories", or "taxCategory"?
+[01:24:23.098] Browser LOG     Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm

@@ -6,6 +6,9 @@ import { MobileSearchBar } from "@components/layout/navbar/MobileSearch";
 import CategoryGrid from "./CategoryGrid";
 import BestSellingProducts from "./BestSellingProducts";
 import ArabicBanner from "./ArabicBanner";
+import { BestSellingSliderSkeleton } from "@components/common/skeleton/BestSellingSliderSkeleton";
+import PartnerWithSection from "@components/layout/footer/PartnerWithSection";
+import ReviewsCarousel from "@components/layout/footer/ReviewsCarousel";
 
 interface RenderThemeCustomizationProps {
   themeCustomizations: ThemeCustomizationResponse["themeCustomization"];
@@ -51,8 +54,12 @@ const RenderThemeCustomization: FC<RenderThemeCustomizationProps> = ({
                   <Suspense fallback={<div>Loading...</div>}>
                     <CategoryGrid />
                   </Suspense>
-                  <BestSellingProducts />
+                  <Suspense fallback={<BestSellingSliderSkeleton />}>
+                    <BestSellingProducts />
+                  </Suspense>
                   <ArabicBanner />
+                  <PartnerWithSection />
+                  <ReviewsCarousel />
                 </div>
               );
             default:

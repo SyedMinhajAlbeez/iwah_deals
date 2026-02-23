@@ -41,7 +41,7 @@ export default function TopBar() {
           {/* Social Icons */}
           <div className="flex items-center gap-2 sm:gap-2.5">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/183pc9e4Kh/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -51,7 +51,7 @@ export default function TopBar() {
             </Link>
 
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/iwah_deals?igsh=MXJ2emhoaDdvaTZsOQ=="
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

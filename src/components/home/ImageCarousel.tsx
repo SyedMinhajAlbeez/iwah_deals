@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { MainCarouselSkeleton } from "@components/common/skeleton/MainCarouselSkeleton";
 
 const banners = [
     {
@@ -35,6 +36,9 @@ const banners = [
 export default function ImageCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
+    const [loadedSlides, setLoadedSlides] = useState<boolean[]>(() =>
+        Array.from({ length: banners.length }, () => false),
+    );
     const autoplayRef = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
@@ -76,6 +80,17 @@ export default function ImageCarousel() {
         }
     };
 
+    const markSlideLoaded = (index: number) => {
+        setLoadedSlides((prev) => {
+            if (prev[index]) return prev;
+            const next = [...prev];
+            next[index] = true;
+            return next;
+        });
+    };
+
+    const isActiveSlideLoaded = loadedSlides[currentIndex];
+
     return (
         <section className="w-full mt-8 space-y-6">
             {/* Main Carousel */}
@@ -85,8 +100,14 @@ export default function ImageCarousel() {
                 onMouseLeave={() => setIsPaused(false)}
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
+                aria-busy={!isActiveSlideLoaded}
             >
                 <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px]">
+                    {!isActiveSlideLoaded && (
+                        <div className="pointer-events-none absolute inset-0 z-20">
+                            <MainCarouselSkeleton />
+                        </div>
+                    )}
                     {/* Carousel Slides */}
                     {banners.map((banner, index) => (
                         <div
@@ -110,6 +131,9 @@ export default function ImageCarousel() {
                                             className="object-cover object-center"
                                             priority={index === 0}
                                             sizes="100vw"
+                                            onLoadingComplete={() =>
+                                                markSlideLoaded(index)
+                                            }
                                         />
                                     </div>
                                 </Link>
@@ -122,6 +146,9 @@ export default function ImageCarousel() {
                                         className="object-cover object-center"
                                         priority={index === 0}
                                         sizes="100vw"
+                                        onLoadingComplete={() =>
+                                            markSlideLoaded(index)
+                                        }
                                     />
                                 </div>
                             )}

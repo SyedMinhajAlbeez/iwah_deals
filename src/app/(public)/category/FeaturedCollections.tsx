@@ -86,7 +86,7 @@ export default function FeaturedCollections() {
           <Image
             src="/image/categories/card3.jpg"
             alt="Banner"
-            width={3/4} // Actual width of your file
+            width={1200} // Actual width of your file
             height={500}  // Desired height
             className="rounded-lg w-full h-auto"
           />
